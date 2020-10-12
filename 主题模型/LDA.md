@@ -128,8 +128,6 @@ LDA 是标准的词袋模型。
 LDA 主要涉及的问题包括共轭先验分布、Dirichlet 分布以及 Gibbs 采样算法学习参数。LDA 的输入为文档数目$M$，词数目$V$(非重复的 term)，主题数目$K$。
 ![](http://7xlgth.com1.z0.glb.clouddn.com/5C724613-24AC-4782-B1DB-E890B87885FF.png)
 
-![](https://coding.net/u/hoteam/p/Cache/git/raw/master/2016/8/1/6D650E67-A400-416C-A1AB-8E864513ED05.png)
-
 # Mathematics
 
 ## Beta 分布:Dirichlet 分布的基础

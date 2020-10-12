@@ -246,6 +246,3 @@ def wv_visualizer(model, word = ["man"]):
 # 调用时传入目标词组即可
 wv_visualizer(model,["China","Airline"])
 ```
-
-![](https://coding.net/u/hoteam/p/Cache/git/raw/master/2017/3/2/figure_1.png)
-![](https://coding.net/u/hoteam/p/Cache/git/raw/master/2017/3/2/figure_2.png)
