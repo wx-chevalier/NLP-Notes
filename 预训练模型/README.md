@@ -1,5 +1,5 @@
 # 预训练模型
 
-# 链接
+# TBD
 
 - https://mp.weixin.qq.com/s/zbkSw6VwmmbTQPSyRPlhEQ
