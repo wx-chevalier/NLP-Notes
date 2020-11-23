@@ -1,19 +1,25 @@
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![license: CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey.svg)][license-url]
+
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/wx-chevalier/AI-Series">
+  <a href="https://github.com/wx-chevalier/NLP-Series">
     <img src="header.svg" alt="Logo" style="width: 100vw;height: 400px" />
   </a>
 
   <p align="center">
-    <a href="https://github.com/wx-chevalier/AI-Series"><strong>AI Series»</strong></a>
+    <a href="https://ng-tech.icu/NLP-Series"><strong>在线阅读 >> </strong></a>
     <br />
     <br />
-    <a href="https://github.com/wx-chevalier/ai-notebooks">Note Books</a>
+    <a href="https://github.com/wx-chevalier/Awesome-CheatSheets">速览手册</a>
     ·
-    <a href="https://github.com/wx-chevalier/ai-models">Models</a>
+    <a href="https://github.com/wx-chevalier">代码实践</a>
     ·
-    <a href="https://github.com/topics/wx-ai-kits">Projects</a>
+    <a href="https://github.com/wx-chevalier/Awesome-Lists">参考资料</a>
 
   </p>
 </p>
@@ -71,3 +77,17 @@ Contributions are what make the open source community such an amazing place to b
 笔者所有文章遵循[知识共享 署名 - 非商业性使用 - 禁止演绎 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh)，欢迎转载，尊重版权。您还可以前往 [NGTE Books](https://ng-tech.icu/books/) 主页浏览包含知识体系、编程语言、软件工程、模式与架构、Web 与大前端、服务端开发实践与工程架构、分布式基础架构、人工智能与深度学习、产品运营与创业等多类目的书籍列表：
 
 [![NGTE Books](https://s2.ax1x.com/2020/01/18/19uXtI.png)](https://ng-tech.icu/books/)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/wx-chevalier/NLP-Series.svg?style=flat-square
+[contributors-url]: https://github.com/wx-chevalier/NLP-Series/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/wx-chevalier/NLP-Series.svg?style=flat-square
+[forks-url]: https://github.com/wx-chevalier/NLP-Series/network/members
+[stars-shield]: https://img.shields.io/github/stars/wx-chevalier/NLP-Series.svg?style=flat-square
+[stars-url]: https://github.com/wx-chevalier/NLP-Series/stargazers
+[issues-shield]: https://img.shields.io/github/issues/wx-chevalier/NLP-Series.svg?style=flat-square
+[issues-url]: https://github.com/wx-chevalier/NLP-Series/issues
+[license-shield]: https://img.shields.io/github/license/wx-chevalier/NLP-Series.svg?style=flat-square
+[license-url]: https://github.com/wx-chevalier/NLP-Series/blob/master/LICENSE.txt
