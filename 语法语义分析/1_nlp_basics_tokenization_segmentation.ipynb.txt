@@ -449,7 +449,7 @@
         "stemmer = SnowballStemmer(language='english')\n",
         "doc = 'I prefer not to argue'\n",
         "for token in doc.split(\" \"):\n",
-        "    print(token, '=>' , stemmer.stem(token))"
+        "    print(token, '=>', stemmer.stem(token))"
       ],
       "execution_count": 0,
       "outputs": [

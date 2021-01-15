@@ -197,7 +197,7 @@ Dir(\vec{p} | \alpha,K) = \frac{1}{\Delta_K(\alpha)} \prod_{k=1}^{K} p_k^{\alpha
 \Delta_K(\vec{\alpha}) =  \Gamma^K(\alpha){ \Gamma(K * \alpha)}
 $$
 
-而不同的$\alpha$取值，当$\alpha=1$时候，退化为均匀分布。当$\alpha>1$时候，$p_1 = p_2 = \dots = p_k$的概率增大。当$\alpha<1$时候，$p_1 = 1 , p_{非i} = 0$的概率增大。映射到具体的文档分类中，$\alpha$取值越小，说明各个主题之间的离差越大。而$\alpha$值越大，说明该文档中各个主题出现的概率约接近。
+而不同的$\alpha$取值，当$\alpha=1$时候，退化为均匀分布。当$\alpha>1$时候，$p_1 = p_2 = \dots = p_k$的概率增大。当$\alpha<1$时候，$p_1 = 1, p_{非i} = 0$的概率增大。映射到具体的文档分类中，$\alpha$取值越小，说明各个主题之间的离差越大。而$\alpha$值越大，说明该文档中各个主题出现的概率约接近。
 
 ![](http://7xkt0f.com1.z0.glb.clouddn.com/5C6D7D8E-3B58-41BF-8E6F-DBD1F1AA2B7A.png)
 
