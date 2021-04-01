@@ -16,24 +16,6 @@ Word2vec 需要一串句子做为其输入。每个句子，也就是一个词�
 
 Word2vec 神经网络的输出是一个词表，每个词由一个向量来表示，这个向量可以做为深度神经网络的输入来进行分类。
 
-## Distributed Representation
-
-> - [Deep-Learning-What-is-meant-by-a-distributed-representation](https://www.quora.com/Deep-Learning/Deep-Learning-What-is-meant-by-a-distributed-representation)
-
-## Reference
-
-### Tutorial & Docs
-
-- [Google - Word2Vec](https://code.google.com/p/word2vec/)
-- [Deep Learning 实战之 word2vec](http://techblog.youdao.com/?p=915#LinkTarget_699)
-- [word2vector 学习笔记(一)](http://blog.csdn.net/lingerlanlan/article/details/38048335)
-- [词向量和语言模型](http://licstar.net/archives/328#s20)
-
-### Practice
-
-- [关于多个词向量算法的实现对比](https://github.com/licstar/compare)
-- [斯坦福深度学习课程第二弹：词向量内部和外部任务评价](https://zhuanlan.zhihu.com/p/21391710)
-
 # Quick Start
 
 ## Python
