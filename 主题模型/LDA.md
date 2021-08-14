@@ -199,8 +199,6 @@ $$
 
 而不同的$\alpha$取值，当$\alpha=1$时候，退化为均匀分布。当$\alpha>1$时候，$p_1 = p_2 = \dots = p_k$的概率增大。当$\alpha<1$时候，$p_1 = 1, p_{非i} = 0$的概率增大。映射到具体的文档分类中，$\alpha$取值越小，说明各个主题之间的离差越大。而$\alpha$值越大，说明该文档中各个主题出现的概率约接近。
 
-![](http://7xkt0f.com1.z0.glb.clouddn.com/5C6D7D8E-3B58-41BF-8E6F-DBD1F1AA2B7A.png)
-
 在实际的应用中，一般会选用$1/K$作为$\alpha$的初始值。
 
 # 模型解释
@@ -272,8 +270,6 @@ p(\vec{z} | \vec{\alpha}) \\
 $$
 
 ## Gibbs Updating Rule
-
-![](http://7xkt0f.com1.z0.glb.clouddn.com/6173FC5A-A728-4818-9474-21D6E2A61CC2.png)
 
 ## 词分布和主题分布总结
 
