@@ -70,8 +70,6 @@ Words in train file: 17005206
 
   用 ANSJ 对 corpus.txt 进行分词，得到分词结果 resultbig.txt，大小为 3.1G。在分词工具 seg_tool 目录下先编译再执行得到分词结果 resultbig.txt，内含 426221 个词，次数总计 572308385 个。
 
-![](http://img2.tuicool.com/3MNzmu.jpg%21web)
-
 - 词向量训练
 
 ```shell
@@ -88,15 +86,11 @@ nohup ./word2vec -train resultbig.txt -output vectors.bin -cbow 0 -size 200 -win
 
      ./distance可以看成计算词与词之间的距离，把词看成向量空间上的一个点，distance看成向量空间上点与点的距离。
 
-![](http://img2.tuicool.com/vmYBrq.png!web)
-
 (2)潜在的语言学规律
 
       在对demo-analogy.sh修改后得到下面几个例子：
 
       法国的首都是巴黎，英国的首都是伦敦，vector("法国") - vector("巴黎) + vector("英国") --> vector("伦敦")"
-
-![](http://img0.tuicool.com/FrmE73.png%21web)
 
 (3)聚类
 
@@ -107,8 +101,6 @@ nohup ./word2vec -train resultbig.txt -output vectors.bin -cbow 0 -size 200 -win
 2 sort classes.txt -k 2 -n > classes_sorted_sogouca.txt
 ```
 
-![](http://img1.tuicool.com/j6FrAn.png%21web)
-
 (4)短语分析
 
     先利用经过分词的语料resultbig.txt中得出包含词和短语的文件sogouca_phrase.txt，再训练该文件中词与短语的向量表示。
@@ -117,10 +109,6 @@ nohup ./word2vec -train resultbig.txt -output vectors.bin -cbow 0 -size 200 -win
 1 ./word2phrase -train resultbig.txt -output sogouca_phrase.txt -threshold 500 -debug 2
 2 ./word2vec -train sogouca_phrase.txt -output vectors_sogouca_phrase.bin -cbow 0 -size 300 -window 10 -negative 0 -hs 1 -sample 1e-3 -threads 12 -binary 1
 ```
-
-![](http://img2.tuicool.com/7R3Qzq.png%21web)
-
-![](http://img2.tuicool.com/Yjmmmu.png%21web)
 
 ## 维基百科实验
 
