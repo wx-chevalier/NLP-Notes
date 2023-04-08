@@ -4,14 +4,14 @@
   - [3 LLM [1]](/LLM/README.md)
     - 3.1 GPT [1]
       - 3.1.1 ChatGPT [1]
-        - 3.1.1.1 999.参考资料 [1]
-          - [3.1.1.1.1 GPT 4 大模型硬核解读](/LLM/GPT/ChatGPT/999.参考资料/2023-GPT-4%20大模型硬核解读.md)
+        - 3.1.1.1 99.参考资料 [1]
+          - [3.1.1.1.1 GPT 4 大模型硬核解读](/LLM/GPT/ChatGPT/99.参考资料/2023-GPT-4%20大模型硬核解读.md)
   - [4 Transformer [1]](/Transformer/README.md)
-    - 4.1 999.参考资料 [4]
-      - [4.1.1 NLP 中的 RNN、Seq2Seq 与 Attention 注意力机制](/Transformer/999.参考资料/2019-NLP%20中的%20RNN、Seq2Seq%20与%20Attention%20注意力机制.md)
-      - [4.1.2 完全解析 RNN, Seq2Seq, Attention 注意力机制](/Transformer/999.参考资料/2020-完全解析%20RNN,%20Seq2Seq,%20Attention%20注意力机制.md)
-      - [4.1.3 Transformer模型详解（图解最完整版）](/Transformer/999.参考资料/2021-Transformer模型详解（图解最完整版）.md)
-      - [4.1.4 超详细图解 Self Attention](/Transformer/999.参考资料/2021-超详细图解%20Self-Attention.md)
+    - 4.1 99.参考资料 [4]
+      - [4.1.1 NLP 中的 RNN、Seq2Seq 与 Attention 注意力机制](/Transformer/99.参考资料/2019-NLP%20中的%20RNN、Seq2Seq%20与%20Attention%20注意力机制.md)
+      - [4.1.2 完全解析 RNN, Seq2Seq, Attention 注意力机制](/Transformer/99.参考资料/2020-完全解析%20RNN,%20Seq2Seq,%20Attention%20注意力机制.md)
+      - [4.1.3 Transformer模型详解（图解最完整版）](/Transformer/99.参考资料/2021-Transformer模型详解（图解最完整版）.md)
+      - [4.1.4 超详细图解 Self Attention](/Transformer/99.参考资料/2021-超详细图解%20Self-Attention.md)
   - [5 循环神经网络](/循环神经网络/README.md)
     
   - 6 经典自然语言 [4]
