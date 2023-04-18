@@ -1,11 +1,14 @@
   - [1 0.导论](/0.导论/README.md)
     
   - [2 INTRODUCTION](/INTRODUCTION.md)
-  - [3 LLM [1]](/LLM/README.md)
+  - [3 LLM [2]](/LLM/README.md)
     - 3.1 GPT [1]
       - 3.1.1 ChatGPT [1]
         - 3.1.1.1 99.参考资料 [1]
           - [3.1.1.1.1 GPT 4 大模型硬核解读](/LLM/GPT/ChatGPT/99.参考资料/2023-GPT-4%20大模型硬核解读.md)
+    - 3.2 代码生成 [1]
+      - 3.2.1 99.参考资料 [1]
+        - [3.2.1.1 An example of LLM prompting for programming](/LLM/代码生成/99.参考资料/2023-An%20example%20of%20LLM%20prompting%20for%20programming.md)
   - [4 Transformer [1]](/Transformer/README.md)
     - 4.1 99.参考资料 [4]
       - [4.1.1 NLP 中的 RNN、Seq2Seq 与 Attention 注意力机制](/Transformer/99.参考资料/2019-NLP%20中的%20RNN、Seq2Seq%20与%20Attention%20注意力机制.md)
