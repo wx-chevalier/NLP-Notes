@@ -1,44 +1,46 @@
-  - [1 0.导论](/0.导论/README.md)
+  - [1 00.导论](/00.导论/README.md)
     
-  - [2 INTRODUCTION](/INTRODUCTION.md)
-  - [3 LLM [3]](/LLM/README.md)
-    - 3.1 GPT [1]
-      - 3.1.1 ChatGPT [1]
-        - 3.1.1.1 99.参考资料 [1]
-          - [3.1.1.1.1 GPT 4 大模型硬核解读](/LLM/GPT/ChatGPT/99.参考资料/2023-GPT-4%20大模型硬核解读.md)
-    - 3.2 代码生成 [1]
-      - 3.2.1 99.参考资料 [1]
-        - [3.2.1.1 An example of LLM prompting for programming](/LLM/代码生成/99.参考资料/2023-An%20example%20of%20LLM%20prompting%20for%20programming.md)
-    - 3.3 大模型微调 [1]
-      - 3.3.1 99.参考资料 [1]
-        - [3.3.1.1 Finetuning Large Language Models](/LLM/大模型微调/99.参考资料/2023-Finetuning%20Large%20Language%20Models.md)
-  - [4 Transformer [1]](/Transformer/README.md)
-    - 4.1 99.参考资料 [4]
-      - [4.1.1 NLP 中的 RNN、Seq2Seq 与 Attention 注意力机制](/Transformer/99.参考资料/2019-NLP%20中的%20RNN、Seq2Seq%20与%20Attention%20注意力机制.md)
-      - [4.1.2 完全解析 RNN, Seq2Seq, Attention 注意力机制](/Transformer/99.参考资料/2020-完全解析%20RNN,%20Seq2Seq,%20Attention%20注意力机制.md)
-      - [4.1.3 Transformer模型详解（图解最完整版）](/Transformer/99.参考资料/2021-Transformer模型详解（图解最完整版）.md)
-      - [4.1.4 超详细图解 Self Attention](/Transformer/99.参考资料/2021-超详细图解%20Self-Attention.md)
-  - [5 循环神经网络](/循环神经网络/README.md)
+  - 2 99.参考资料 [1]
+    - [2.1 陆奇 我的大模型世界观](/99.参考资料/2023-陆奇-我的大模型世界观.md)
+  - [3 INTRODUCTION](/INTRODUCTION.md)
+  - [4 LLM [3]](/LLM/README.md)
+    - 4.1 GPT [1]
+      - 4.1.1 ChatGPT [1]
+        - 4.1.1.1 99.参考资料 [1]
+          - [4.1.1.1.1 GPT 4 大模型硬核解读](/LLM/GPT/ChatGPT/99.参考资料/2023-GPT-4%20大模型硬核解读.md)
+    - 4.2 代码生成 [1]
+      - 4.2.1 99.参考资料 [1]
+        - [4.2.1.1 An example of LLM prompting for programming](/LLM/代码生成/99.参考资料/2023-An%20example%20of%20LLM%20prompting%20for%20programming.md)
+    - 4.3 大模型微调 [1]
+      - 4.3.1 99.参考资料 [1]
+        - [4.3.1.1 Finetuning Large Language Models](/LLM/大模型微调/99.参考资料/2023-Finetuning%20Large%20Language%20Models.md)
+  - [5 Transformer [1]](/Transformer/README.md)
+    - 5.1 99.参考资料 [4]
+      - [5.1.1 NLP 中的 RNN、Seq2Seq 与 Attention 注意力机制](/Transformer/99.参考资料/2019-NLP%20中的%20RNN、Seq2Seq%20与%20Attention%20注意力机制.md)
+      - [5.1.2 完全解析 RNN, Seq2Seq, Attention 注意力机制](/Transformer/99.参考资料/2020-完全解析%20RNN,%20Seq2Seq,%20Attention%20注意力机制.md)
+      - [5.1.3 Transformer模型详解（图解最完整版）](/Transformer/99.参考资料/2021-Transformer模型详解（图解最完整版）.md)
+      - [5.1.4 超详细图解 Self Attention](/Transformer/99.参考资料/2021-超详细图解%20Self-Attention.md)
+  - [6 循环神经网络](/循环神经网络/README.md)
     
-  - 6 经典自然语言 [4]
-    - 6.1 主题模型 [1]
-      - [6.1.1 LDA](/经典自然语言/主题模型/LDA.md)
-    - 6.2 统计语言模型 [5]
-      - [6.2.1 BERT [2]](/经典自然语言/统计语言模型/BERT/README.md)
-        - [6.2.1.1 目标函数](/经典自然语言/统计语言模型/BERT/目标函数.md)
-        - [6.2.1.2 输入表示](/经典自然语言/统计语言模型/BERT/输入表示.md)
-      - [6.2.2 Word2Vec](/经典自然语言/统计语言模型/Word2Vec.md)
-      - [6.2.3 基础文本处理](/经典自然语言/统计语言模型/基础文本处理.md)
-      - [6.2.4 统计语言模型](/经典自然语言/统计语言模型/统计语言模型.md)
-      - [6.2.5 词表示](/经典自然语言/统计语言模型/词表示.md)
-    - 6.3 词嵌入 [2]
-      - [6.3.1 概述](/经典自然语言/词嵌入/概述.md)
-      - 6.3.2 词向量 [1]
-        - [6.3.2.1 基于 Gensim 的 Word2Vec 实践](/经典自然语言/词嵌入/词向量/基于%20Gensim%20的%20Word2Vec%20实践.md)
-    - 6.4 语法语义分析 [1]
-      - [6.4.1 命名实体识别](/经典自然语言/语法语义分析/命名实体识别.md)
-  - 7 行业应用 [2]
-    - [7.1 机器人问答](/行业应用/机器人问答/README.md)
+  - 7 经典自然语言 [4]
+    - 7.1 主题模型 [1]
+      - [7.1.1 LDA](/经典自然语言/主题模型/LDA.md)
+    - 7.2 统计语言模型 [5]
+      - [7.2.1 BERT [2]](/经典自然语言/统计语言模型/BERT/README.md)
+        - [7.2.1.1 目标函数](/经典自然语言/统计语言模型/BERT/目标函数.md)
+        - [7.2.1.2 输入表示](/经典自然语言/统计语言模型/BERT/输入表示.md)
+      - [7.2.2 Word2Vec](/经典自然语言/统计语言模型/Word2Vec.md)
+      - [7.2.3 基础文本处理](/经典自然语言/统计语言模型/基础文本处理.md)
+      - [7.2.4 统计语言模型](/经典自然语言/统计语言模型/统计语言模型.md)
+      - [7.2.5 词表示](/经典自然语言/统计语言模型/词表示.md)
+    - 7.3 词嵌入 [2]
+      - [7.3.1 概述](/经典自然语言/词嵌入/概述.md)
+      - 7.3.2 词向量 [1]
+        - [7.3.2.1 基于 Gensim 的 Word2Vec 实践](/经典自然语言/词嵌入/词向量/基于%20Gensim%20的%20Word2Vec%20实践.md)
+    - 7.4 语法语义分析 [1]
+      - [7.4.1 命名实体识别](/经典自然语言/语法语义分析/命名实体识别.md)
+  - 8 行业应用 [2]
+    - [8.1 机器人问答](/行业应用/机器人问答/README.md)
       
-    - [7.2 聊天对话](/行业应用/聊天对话/README.md)
+    - [8.2 聊天对话](/行业应用/聊天对话/README.md)
       
