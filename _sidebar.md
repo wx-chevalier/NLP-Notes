@@ -15,11 +15,12 @@
       - 4.3.1 99.参考资料 [1]
         - [4.3.1.1 Finetuning Large Language Models](/LLM/大模型微调/99.参考资料/2023-Finetuning%20Large%20Language%20Models.md)
   - [5 Transformer [1]](/Transformer/README.md)
-    - 5.1 99.参考资料 [4]
+    - 5.1 99.参考资料 [5]
       - [5.1.1 NLP 中的 RNN、Seq2Seq 与 Attention 注意力机制](/Transformer/99.参考资料/2019-NLP%20中的%20RNN、Seq2Seq%20与%20Attention%20注意力机制.md)
       - [5.1.2 完全解析 RNN, Seq2Seq, Attention 注意力机制](/Transformer/99.参考资料/2020-完全解析%20RNN,%20Seq2Seq,%20Attention%20注意力机制.md)
       - [5.1.3 Transformer模型详解（图解最完整版）](/Transformer/99.参考资料/2021-Transformer模型详解（图解最完整版）.md)
       - [5.1.4 超详细图解 Self Attention](/Transformer/99.参考资料/2021-超详细图解%20Self-Attention.md)
+      - [5.1.5 Transformers from Scratch](/Transformer/99.参考资料/2023-Transformers%20from%20Scratch.md)
   - [6 循环神经网络](/循环神经网络/README.md)
     
   - 7 经典自然语言 [4]
