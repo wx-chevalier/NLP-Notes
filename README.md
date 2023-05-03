@@ -7,12 +7,12 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/wx-chevalier/NLP-Series">
+  <a href="https://github.com/wx-chevalier/NLP-Notes">
     <img src="https://assets.ng-tech.icu/item/header.svg" alt="Logo" style="width: 100vw;height: 400px" />
   </a>
 
   <p align="center">
-    <a href="https://ng-tech.icu/books/NLP-Series"><strong>在线阅读 >> </strong></a>
+    <a href="https://ng-tech.icu/books/NLP-Notes"><strong>在线阅读 >> </strong></a>
     <br />
     <br />
     <a href="https://github.com/wx-chevalier">代码案例</a>
@@ -67,13 +67,13 @@ Contributions are what make the open source community such an amazing place to b
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/wx-chevalier/NLP-Series.svg?style=flat-square
-[contributors-url]: https://github.com/wx-chevalier/NLP-Series/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/wx-chevalier/NLP-Series.svg?style=flat-square
-[forks-url]: https://github.com/wx-chevalier/NLP-Series/network/members
-[stars-shield]: https://img.shields.io/github/stars/wx-chevalier/NLP-Series.svg?style=flat-square
-[stars-url]: https://github.com/wx-chevalier/NLP-Series/stargazers
-[issues-shield]: https://img.shields.io/github/issues/wx-chevalier/NLP-Series.svg?style=flat-square
-[issues-url]: https://github.com/wx-chevalier/NLP-Series/issues
-[license-shield]: https://img.shields.io/github/license/wx-chevalier/NLP-Series.svg?style=flat-square
-[license-url]: https://github.com/wx-chevalier/NLP-Series/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/wx-chevalier/NLP-Notes.svg?style=flat-square
+[contributors-url]: https://github.com/wx-chevalier/NLP-Notes/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/wx-chevalier/NLP-Notes.svg?style=flat-square
+[forks-url]: https://github.com/wx-chevalier/NLP-Notes/network/members
+[stars-shield]: https://img.shields.io/github/stars/wx-chevalier/NLP-Notes.svg?style=flat-square
+[stars-url]: https://github.com/wx-chevalier/NLP-Notes/stargazers
+[issues-shield]: https://img.shields.io/github/issues/wx-chevalier/NLP-Notes.svg?style=flat-square
+[issues-url]: https://github.com/wx-chevalier/NLP-Notes/issues
+[license-shield]: https://img.shields.io/github/license/wx-chevalier/NLP-Notes.svg?style=flat-square
+[license-url]: https://github.com/wx-chevalier/NLP-Notes/blob/master/LICENSE.txt
