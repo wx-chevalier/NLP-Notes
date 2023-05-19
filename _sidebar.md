@@ -1,11 +1,12 @@
   - [1 00.导论](/00.导论/README.md)
     
-  - 2 99.参考资料 [2]
-    - 2.1 吴恩达 《ChatGPT Prompt Engineering for Developers》 [2]
-      - [2.1.1 00.README](/99.参考资料/2023-吴恩达-《ChatGPT%20Prompt%20Engineering%20for%20Developers》/00.README.md)
-      - [2.1.2 01. 简介](/99.参考资料/2023-吴恩达-《ChatGPT%20Prompt%20Engineering%20for%20Developers》/01.%20简介.md)
-      - [2.1.3 09. 总结](/99.参考资料/2023-吴恩达-《ChatGPT%20Prompt%20Engineering%20for%20Developers》/09.%20总结.md)
-    - [2.2 陆奇 我的大模型世界观](/99.参考资料/2023-陆奇-我的大模型世界观.md)
+  - 2 99.参考资料 [3]
+    - [2.1 Numbers every LLM Developer should know](/99.参考资料/2023-Numbers%20every%20LLM%20Developer%20should%20know.md)
+    - 2.2 吴恩达 《ChatGPT Prompt Engineering for Developers》 [2]
+      - [2.2.1 00.README](/99.参考资料/2023-吴恩达-《ChatGPT%20Prompt%20Engineering%20for%20Developers》/00.README.md)
+      - [2.2.2 01. 简介](/99.参考资料/2023-吴恩达-《ChatGPT%20Prompt%20Engineering%20for%20Developers》/01.%20简介.md)
+      - [2.2.3 09. 总结](/99.参考资料/2023-吴恩达-《ChatGPT%20Prompt%20Engineering%20for%20Developers》/09.%20总结.md)
+    - [2.3 陆奇 我的大模型世界观](/99.参考资料/2023-陆奇-我的大模型世界观.md)
   - [3 INTRODUCTION](/INTRODUCTION.md)
   - [4 LLM [3]](/LLM/README.md)
     - 4.1 GPT [1]
