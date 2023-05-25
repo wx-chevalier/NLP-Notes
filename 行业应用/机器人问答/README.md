@@ -4,7 +4,7 @@
 
 知识库首先由很多的 FAQ 构成，比如构建一个客服领域的知识库，就需要将客服整个垂直场景涉及的问题都罗列出来，并配置相应的答案。比如，“我要怎么开淘宝店？”，“我要怎么退款”，“我的密码要怎么重置”。成千上万的 FAQ 对，构成了整个知识库的基础。机器人在回答时，就是从知识库里找到和用户问题非常接近的标准问题（称为“知识”），用它的答案进行回复。
 
-![](https://i.postimg.cc/6pf44tSL/image.png)
+![](https://assets.ng-tech.icu/item/20230525221648.png)
 
 # 知识库的组织
 
@@ -49,7 +49,7 @@ BERT 的信息抽取器是 Transformer，Transformer 在翻译的任务里就表
 
 在开发阶段，我们尝试了 Seq2Seq、ConSeq2Seq，以上模型经常生成 save answer 和不通顺的语句，场景建模能力较弱，非该场景的生成语句偏多。在尝试了 Transformer + Beam Search 的架构后，Transformer 本身的并行化特性，以及网络结构里，Multi-head Attention 能够获取到更丰富语义，生成效率和生成句子的多样性以及句子质量都得到了答复提高。
 
-![](https://i.postimg.cc/Mp3xFLjJ/image.png)
+![](https://assets.ng-tech.icu/item/20230525221720.png)
 
 ## 规则链路
 
@@ -66,21 +66,15 @@ MiniTrie 先读取 Trie 树的同义词文件，在内存里建立替换关系�
 将 root 出发的子树进行合并，调整/删除子树，构造新的句子。整个流程包括两部分，训练和预测。训练是依赖于相似的句对，构造可转换的规则库。
 
 1）确保相似句对来自同一个领域
-
 2）使用 Alinlp 对句对分别进行依存句法分析，获得 chunk 序列，包含依存关系及相应的 label
-
 3）使用 chunk 合并器，对生成的 chunk 序列进行合并
-
 4）取 chunk 序列的 label 作为句子表示，将句对的 label 序列作为一条规则加入到规则库
 
 预测阶段通过规则库，对转换后的句子进行筛选：
 
 1）使用 Alinlp 对输入语句进行依存句法分析，获得 chunk 序列，包含依存关系及相应的 label
-
 2）使用 chunk 合并器，对生成的 chunk 序列进行合并
-
 3）对 chunk 序列进行位置置换，或者删除 chunk，生成候选集
-
 4）对候选集中的 chunk 序列，取 label 作为表示，用规则库判断转换是否合理，不合理的则丢弃
 
 ![](https://i.postimg.cc/FsQjYWzv/image.png)
