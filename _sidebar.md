@@ -8,17 +8,21 @@
       - [2.2.3 09. 总结](/99.参考资料/2023-吴恩达-《ChatGPT%20Prompt%20Engineering%20for%20Developers》/09.%20总结.md)
     - [2.3 陆奇 我的大模型世界观](/99.参考资料/2023-陆奇-我的大模型世界观.md)
   - [3 INTRODUCTION](/INTRODUCTION.md)
-  - [4 LLM [3]](/LLM/README.md)
-    - 4.1 GPT [1]
-      - 4.1.1 ChatGPT [1]
-        - 4.1.1.1 99.参考资料 [1]
-          - [4.1.1.1.1 GPT 4 大模型硬核解读](/LLM/GPT/ChatGPT/99.参考资料/2023-GPT-4%20大模型硬核解读.md)
-    - 4.2 代码生成 [1]
-      - 4.2.1 99.参考资料 [1]
-        - [4.2.1.1 An example of LLM prompting for programming](/LLM/代码生成/99.参考资料/2023-An%20example%20of%20LLM%20prompting%20for%20programming.md)
-    - 4.3 大模型微调 [1]
+  - [4 LLM [4]](/LLM/README.md)
+    - 4.1 99.参考资料 [1]
+      - [4.1.1 cohere LLM University [1]](/LLM/99.参考资料/cohere-LLM%20University/README.md)
+        - [4.1.1.1 01.What are Large Language Models? [1]](/LLM/99.参考资料/cohere-LLM%20University/01.What%20are%20Large%20Language%20Models?/README.md)
+          - [4.1.1.1.1 01.Text Embeddings](/LLM/99.参考资料/cohere-LLM%20University/01.What%20are%20Large%20Language%20Models?/01.Text%20Embeddings.md)
+    - 4.2 GPT [1]
+      - 4.2.1 ChatGPT [1]
+        - 4.2.1.1 99.参考资料 [1]
+          - [4.2.1.1.1 GPT 4 大模型硬核解读](/LLM/GPT/ChatGPT/99.参考资料/2023-GPT-4%20大模型硬核解读.md)
+    - 4.3 代码生成 [1]
       - 4.3.1 99.参考资料 [1]
-        - [4.3.1.1 Finetuning Large Language Models](/LLM/大模型微调/99.参考资料/2023-Finetuning%20Large%20Language%20Models.md)
+        - [4.3.1.1 An example of LLM prompting for programming](/LLM/代码生成/99.参考资料/2023-An%20example%20of%20LLM%20prompting%20for%20programming.md)
+    - 4.4 大模型微调 [1]
+      - 4.4.1 99.参考资料 [1]
+        - [4.4.1.1 Finetuning Large Language Models](/LLM/大模型微调/99.参考资料/2023-Finetuning%20Large%20Language%20Models.md)
   - [5 Transformer [1]](/Transformer/README.md)
     - 5.1 99.参考资料 [5]
       - [5.1.1 NLP 中的 RNN、Seq2Seq 与 Attention 注意力机制](/Transformer/99.参考资料/2019-NLP%20中的%20RNN、Seq2Seq%20与%20Attention%20注意力机制.md)
