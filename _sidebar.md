@@ -1,12 +1,20 @@
   - [1 00.导论](/00.导论/README.md)
     
-  - 2 99.参考资料 [3]
+  - 2 99.参考资料 [5]
     - [2.1 Numbers every LLM Developer should know](/99.参考资料/2023-Numbers%20every%20LLM%20Developer%20should%20know.md)
-    - 2.2 吴恩达 《ChatGPT Prompt Engineering for Developers》 [2]
-      - [2.2.1 00.README](/99.参考资料/2023-吴恩达-《ChatGPT%20Prompt%20Engineering%20for%20Developers》/00.README.md)
-      - [2.2.2 01. 简介](/99.参考资料/2023-吴恩达-《ChatGPT%20Prompt%20Engineering%20for%20Developers》/01.%20简介.md)
-      - [2.2.3 09. 总结](/99.参考资料/2023-吴恩达-《ChatGPT%20Prompt%20Engineering%20for%20Developers》/09.%20总结.md)
-    - [2.3 陆奇 我的大模型世界观](/99.参考资料/2023-陆奇-我的大模型世界观.md)
+    - 2.2 吴恩达 《Building Systems with the ChatGPT API》 [3]
+      - [2.2.1 1.Introduction](/99.参考资料/2023-吴恩达-《Building%20Systems%20with%20the%20ChatGPT%20API》/1.Introduction.md)
+      - [2.2.2 11.conclusion](/99.参考资料/2023-吴恩达-《Building%20Systems%20with%20the%20ChatGPT%20API》/11.conclusion.md)
+      - [2.2.3 readme](/99.参考资料/2023-吴恩达-《Building%20Systems%20with%20the%20ChatGPT%20API》/readme.md)
+    - 2.3 吴恩达 《ChatGPT Prompt Engineering for Developers》 [2]
+      - [2.3.1 00.README](/99.参考资料/2023-吴恩达-《ChatGPT%20Prompt%20Engineering%20for%20Developers》/00.README.md)
+      - [2.3.2 01. 简介](/99.参考资料/2023-吴恩达-《ChatGPT%20Prompt%20Engineering%20for%20Developers》/01.%20简介.md)
+      - [2.3.3 09. 总结](/99.参考资料/2023-吴恩达-《ChatGPT%20Prompt%20Engineering%20for%20Developers》/09.%20总结.md)
+    - 2.4 吴恩达 《LangChain for LLM Application Development》 [3]
+      - [2.4.1 1.开篇介绍](/99.参考资料/2023-吴恩达-《LangChain%20for%20LLM%20Application%20Development》/1.开篇介绍.md)
+      - [2.4.2 8.课程总结](/99.参考资料/2023-吴恩达-《LangChain%20for%20LLM%20Application%20Development》/8.课程总结.md)
+      - [2.4.3 readme](/99.参考资料/2023-吴恩达-《LangChain%20for%20LLM%20Application%20Development》/readme.md)
+    - [2.5 陆奇 我的大模型世界观](/99.参考资料/2023-陆奇-我的大模型世界观.md)
   - [3 INTRODUCTION](/INTRODUCTION.md)
   - [4 LLM [5]](/LLM/README.md)
     - 4.1 99.参考资料 [1]
