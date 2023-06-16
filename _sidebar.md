@@ -16,7 +16,7 @@
       - [2.4.3 readme](/99.参考资料/2023-吴恩达-《LangChain%20for%20LLM%20Application%20Development》/readme.md)
     - [2.5 陆奇 我的大模型世界观](/99.参考资料/2023-陆奇-我的大模型世界观.md)
   - [3 INTRODUCTION](/INTRODUCTION.md)
-  - [4 LLM [5]](/LLM/README.md)
+  - [4 LLM [6]](/LLM/README.md)
     - 4.1 99.参考资料 [1]
       - [4.1.1 cohere LLM University [1]](/LLM/99.参考资料/cohere-LLM%20University/README.md)
         - [4.1.1.1 01.What are Large Language Models? [1]](/LLM/99.参考资料/cohere-LLM%20University/01.What%20are%20Large%20Language%20Models?/README.md)
@@ -30,37 +30,40 @@
     - 4.4 代码生成 [1]
       - 4.4.1 99.参考资料 [1]
         - [4.4.1.1 An example of LLM prompting for programming](/LLM/代码生成/99.参考资料/2023-An%20example%20of%20LLM%20prompting%20for%20programming.md)
-    - 4.5 大模型微调 [1]
-      - 4.5.1 99.参考资料 [1]
-        - [4.5.1.1 Finetuning Large Language Models](/LLM/大模型微调/99.参考资料/2023-Finetuning%20Large%20Language%20Models.md)
-  - [5 Transformer [1]](/Transformer/README.md)
-    - 5.1 99.参考资料 [5]
-      - [5.1.1 NLP 中的 RNN、Seq2Seq 与 Attention 注意力机制](/Transformer/99.参考资料/2019-NLP%20中的%20RNN、Seq2Seq%20与%20Attention%20注意力机制.md)
-      - [5.1.2 完全解析 RNN, Seq2Seq, Attention 注意力机制](/Transformer/99.参考资料/2020-完全解析%20RNN,%20Seq2Seq,%20Attention%20注意力机制.md)
-      - [5.1.3 Transformer模型详解（图解最完整版）](/Transformer/99.参考资料/2021-Transformer模型详解（图解最完整版）.md)
-      - [5.1.4 超详细图解 Self Attention](/Transformer/99.参考资料/2021-超详细图解%20Self-Attention.md)
-      - [5.1.5 Transformers from Scratch](/Transformer/99.参考资料/2023-Transformers%20from%20Scratch.md)
-  - [6 循环神经网络](/循环神经网络/README.md)
+    - 4.5 语言模型微调 [1]
+      - 4.5.1 99.参考资料 [2]
+        - [4.5.1.1 Finetuning Large Language Models](/LLM/语言模型微调/99.参考资料/2023-Finetuning%20Large%20Language%20Models.md)
+        - [4.5.1.2 Prompt Tuning：深度解读一种新的微调范式](/LLM/语言模型微调/99.参考资料/2023-Prompt-Tuning：深度解读一种新的微调范式.md)
+    - 4.6 预训练语言模型 [2]
+      - [4.6.1 BERT [2]](/LLM/预训练语言模型/BERT/README.md)
+        - [4.6.1.1 目标函数](/LLM/预训练语言模型/BERT/目标函数.md)
+        - [4.6.1.2 输入表示](/LLM/预训练语言模型/BERT/输入表示.md)
+      - [4.6.2 Transformer [1]](/LLM/预训练语言模型/Transformer/README.md)
+        - 4.6.2.1 99.参考资料 [6]
+          - [4.6.2.1.1 NLP 中的 RNN、Seq2Seq 与 Attention 注意力机制](/LLM/预训练语言模型/Transformer/99.参考资料/2019-NLP%20中的%20RNN、Seq2Seq%20与%20Attention%20注意力机制.md)
+          - [4.6.2.1.2 完全解析 RNN, Seq2Seq, Attention 注意力机制](/LLM/预训练语言模型/Transformer/99.参考资料/2020-完全解析%20RNN,%20Seq2Seq,%20Attention%20注意力机制.md)
+          - [4.6.2.1.3 Transformer 模型详解（图解最完整版）](/LLM/预训练语言模型/Transformer/99.参考资料/2021-Transformer%20模型详解（图解最完整版）.md)
+          - [4.6.2.1.4 王嘉宁 【预训练语言模型】Attention Is All You Need（Transformer）](/LLM/预训练语言模型/Transformer/99.参考资料/2021-王嘉宁-【预训练语言模型】Attention%20Is%20All%20You%20Need（Transformer）.md)
+          - [4.6.2.1.5 超详细图解 Self Attention](/LLM/预训练语言模型/Transformer/99.参考资料/2021-超详细图解%20Self-Attention.md)
+          - [4.6.2.1.6 Transformers from Scratch](/LLM/预训练语言模型/Transformer/99.参考资料/2023-Transformers%20from%20Scratch.md)
+  - [5 循环神经网络](/循环神经网络/README.md)
     
-  - 7 经典自然语言 [4]
-    - 7.1 主题模型 [1]
-      - [7.1.1 LDA](/经典自然语言/主题模型/LDA.md)
-    - 7.2 统计语言模型 [5]
-      - [7.2.1 BERT [2]](/经典自然语言/统计语言模型/BERT/README.md)
-        - [7.2.1.1 目标函数](/经典自然语言/统计语言模型/BERT/目标函数.md)
-        - [7.2.1.2 输入表示](/经典自然语言/统计语言模型/BERT/输入表示.md)
-      - [7.2.2 Word2Vec](/经典自然语言/统计语言模型/Word2Vec.md)
-      - [7.2.3 基础文本处理](/经典自然语言/统计语言模型/基础文本处理.md)
-      - [7.2.4 统计语言模型](/经典自然语言/统计语言模型/统计语言模型.md)
-      - [7.2.5 词表示](/经典自然语言/统计语言模型/词表示.md)
-    - 7.3 词嵌入 [2]
-      - [7.3.1 概述](/经典自然语言/词嵌入/概述.md)
-      - 7.3.2 词向量 [1]
-        - [7.3.2.1 基于 Gensim 的 Word2Vec 实践](/经典自然语言/词嵌入/词向量/基于%20Gensim%20的%20Word2Vec%20实践.md)
-    - 7.4 语法语义分析 [1]
-      - [7.4.1 命名实体识别](/经典自然语言/语法语义分析/命名实体识别.md)
-  - 8 行业应用 [2]
-    - [8.1 机器人问答](/行业应用/机器人问答/README.md)
+  - 6 经典自然语言 [4]
+    - 6.1 主题模型 [1]
+      - [6.1.1 LDA](/经典自然语言/主题模型/LDA.md)
+    - 6.2 统计语言模型 [4]
+      - [6.2.1 Word2Vec](/经典自然语言/统计语言模型/Word2Vec.md)
+      - [6.2.2 基础文本处理](/经典自然语言/统计语言模型/基础文本处理.md)
+      - [6.2.3 统计语言模型](/经典自然语言/统计语言模型/统计语言模型.md)
+      - [6.2.4 词表示](/经典自然语言/统计语言模型/词表示.md)
+    - 6.3 词嵌入 [2]
+      - [6.3.1 概述](/经典自然语言/词嵌入/概述.md)
+      - 6.3.2 词向量 [1]
+        - [6.3.2.1 基于 Gensim 的 Word2Vec 实践](/经典自然语言/词嵌入/词向量/基于%20Gensim%20的%20Word2Vec%20实践.md)
+    - 6.4 语法语义分析 [1]
+      - [6.4.1 命名实体识别](/经典自然语言/语法语义分析/命名实体识别.md)
+  - 7 行业应用 [2]
+    - [7.1 机器人问答](/行业应用/机器人问答/README.md)
       
-    - [8.2 聊天对话](/行业应用/聊天对话/README.md)
+    - [7.2 聊天对话](/行业应用/聊天对话/README.md)
       
