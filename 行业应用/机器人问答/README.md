@@ -10,7 +10,7 @@
 
 知识库的逻辑构成如下，3 层结构：标准问题，相似问题，标准答案。一个标准问题对应一个标准答案，一个标准问题下有多个相似问题。机器人定位时，使用标准问题和相似问题进行定位。
 
-![](https://i.postimg.cc/Hkzjs3c6/image.png)
+![](https://assets.ng-tech.icu/item/20230616143530.png)
 
 # 算法架构
 
@@ -21,7 +21,7 @@
 - 规则链路：Tire 树，基于依存句法的生成
 - 辅助算法：敏感词过滤，语言模型，关键词聚类
 
-![](https://i.postimg.cc/632QcXHP/image.png)
+![](https://assets.ng-tech.icu/item/20230616143550.png)
 
 ## 检索链路
 
@@ -37,7 +37,7 @@
 
 HCNN 是 Hybrid CNN 的缩写，它包括了 SE 和 SI，分别构造左右两个子网络，一个是 SI，一个是 SE，把两种方式进行了结合。
 
-![](https://i.postimg.cc/pXx2hzt4/image.png)
+![](https://assets.ng-tech.icu/item/20230616143617.png)
 
 ### BERT 精排
 
@@ -61,7 +61,7 @@ MiniTrie 先读取 Trie 树的同义词文件，在内存里建立替换关系�
 
 ### 基于依存句法的生成
 
-![](https://i.postimg.cc/MTD99Cvy/image.png)
+![](https://assets.ng-tech.icu/item/20230616143634.png)
 
 将 root 出发的子树进行合并，调整/删除子树，构造新的句子。整个流程包括两部分，训练和预测。训练是依赖于相似的句对，构造可转换的规则库。
 
@@ -77,7 +77,7 @@ MiniTrie 先读取 Trie 树的同义词文件，在内存里建立替换关系�
 3）对 chunk 序列进行位置置换，或者删除 chunk，生成候选集
 4）对候选集中的 chunk 序列，取 label 作为表示，用规则库判断转换是否合理，不合理的则丢弃
 
-![](https://i.postimg.cc/FsQjYWzv/image.png)
+![](https://assets.ng-tech.icu/item/20230616143652.png)
 
 ## 辅助算法
 
