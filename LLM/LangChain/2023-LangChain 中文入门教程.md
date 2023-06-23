@@ -111,7 +111,7 @@ Youtube `YoutubeLoader` 等等，上面只是简单的进行列举了几个，�
 
 执行过程可以参考下面这张图:
 
-![image-20230406213322739](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/LangChain-Chinese-Getting-Started-Guide/image-20230406213322739.png)
+![image-20230406213322739](https://assets.ng-tech.icu/book/LangChain-Chinese-Getting-Started-Guide/image-20230406213322739.png)
 
 ### Embedding
 
@@ -157,7 +157,7 @@ llm = OpenAI(model_name="text-davinci-003",max_tokens=1024)
 llm("怎么评价人工智能")
 ```
 
-![image-20230404232621517](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/LangChain-Chinese-Getting-Started-Guide/image-20230404232621517.png)
+![image-20230404232621517](https://assets.ng-tech.icu/book/LangChain-Chinese-Getting-Started-Guide/image-20230404232621517.png)
 
 这时，我们就可以看到他给我们的返回结果了，怎么样，是不是很简单。
 
@@ -204,7 +204,7 @@ agent = initialize_agent(tools, llm, agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION
 agent.run("What's the date today? What great events have taken place today in history?")
 ```
 
-![image-20230404234236982](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/LangChain-Chinese-Getting-Started-Guide/image-20230404234236982.png)
+![image-20230404234236982](https://assets.ng-tech.icu/book/LangChain-Chinese-Getting-Started-Guide/image-20230404234236982.png)
 
 我们可以看到，他正确的返回了日期（有时差），并且返回了历史上的今天。
 
@@ -281,11 +281,11 @@ chain.run(split_documents[:5])
 
 首先我们对切割前和切割后的 document 个数进行了打印，我们可以看到，切割前就是只有整篇的一个 document，切割完成后，会把上面一个 document 切成 317 个 document。
 
-![image-20230405162631460](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/LangChain-Chinese-Getting-Started-Guide/image-20230405162631460.png)
+![image-20230405162631460](https://assets.ng-tech.icu/book/LangChain-Chinese-Getting-Started-Guide/image-20230405162631460.png)
 
 最终输出了对前 5 个 document 的总结。
 
-![image-20230405162937249](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/LangChain-Chinese-Getting-Started-Guide/image-20230405162937249.png)
+![image-20230405162937249](https://assets.ng-tech.icu/book/LangChain-Chinese-Getting-Started-Guide/image-20230405162937249.png)
 
 这里有几个参数需要注意：
 
@@ -305,11 +305,11 @@ chain.run(split_documents[:5])
 
 `map_reduce`: 这个方式会先将每个 document 进行总结，最后将所有 document 总结出的结果再进行一次总结。
 
-![image-20230405165752743](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/LangChain-Chinese-Getting-Started-Guide/image-20230405165752743.png)
+![image-20230405165752743](https://assets.ng-tech.icu/book/LangChain-Chinese-Getting-Started-Guide/image-20230405165752743.png)
 
 `refine`: 这种方式会先总结第一个 document，然后在将第一个 document 总结出的内容和第二个 document 一起发给 llm 模型在进行总结，以此类推。这种方式的好处就是在总结后一个 document 的时候，会带着前一个的 document 进行总结，给需要总结的 document 添加了上下文，增加了总结内容的连贯性。
 
-![image-20230405170617383](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/LangChain-Chinese-Getting-Started-Guide/image-20230405170617383.png)
+![image-20230405170617383](https://assets.ng-tech.icu/book/LangChain-Chinese-Getting-Started-Guide/image-20230405170617383.png)
 
 `map_rerank`: 这种一般不会用在总结的 chain 上，而是会用在问答的 chain 上，他其实是一种搜索答案的匹配方式。首先你要给出一个问题，他会根据问题给每个 document 计算一个这个 document 能回答这个问题的概率分数，然后找到分数最高的那个 document ，在通过把这个 document 转化为问题的 prompt 的一部分（问题+document）发送给 llm 模型，最后 llm 模型返回具体答案。
 
@@ -349,7 +349,7 @@ result = qa({"query": "科大讯飞今年第一季度收入是多少？"})
 print(result)
 ```
 
-![image-20230405173730382](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/LangChain-Chinese-Getting-Started-Guide/image-20230405173730382.png)
+![image-20230405173730382](https://assets.ng-tech.icu/book/LangChain-Chinese-Getting-Started-Guide/image-20230405173730382.png)
 
 我们可以通过结果看到，他成功的从我们的给到的数据中获取了正确的答案。
 
@@ -397,7 +397,7 @@ Metric：可以默认为 cosine
 
 选择 starter plan
 
-![image-20230405184646314](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/LangChain-Chinese-Getting-Started-Guide/starter-plan.png)
+![image-20230405184646314](https://assets.ng-tech.icu/book/LangChain-Chinese-Getting-Started-Guide/starter-plan.png)
 
 持久化数据和加载数据代码如下
 
@@ -452,7 +452,7 @@ chain = load_qa_chain(llm, chain_type="stuff", verbose=True)
 chain.run(input_documents=docs, question=query)
 ```
 
-![image-20230407001803057](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/LangChain-Chinese-Getting-Started-Guide/image-20230407001803057.png)
+![image-20230407001803057](https://assets.ng-tech.icu/book/LangChain-Chinese-Getting-Started-Guide/image-20230407001803057.png)
 
 ### 使用 GPT3.5 模型构建油管频道问答机器人
 
@@ -530,7 +530,7 @@ while True:
 
 我们可以看到他能很准确的围绕这个油管视频进行问答
 
-![image-20230406211923672](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/LangChain-Chinese-Getting-Started-Guide/image-20230406211923672.png)
+![image-20230406211923672](https://assets.ng-tech.icu/book/LangChain-Chinese-Getting-Started-Guide/image-20230406211923672.png)
 
 使用流式回答也很方便
 
@@ -554,9 +554,9 @@ resp = chat(chat_prompt_with_values.to_messages())
 
 我在这里配置了 Gmail 读取和发邮件的 action，并且所有字段都选的是通过 AI 猜。
 
-![image-20230406233319250](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/LangChain-Chinese-Getting-Started-Guide/image-20230406233319250.png)
+![image-20230406233319250](https://assets.ng-tech.icu/book/LangChain-Chinese-Getting-Started-Guide/image-20230406233319250.png)
 
-![image-20230406234827815](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/LangChain-Chinese-Getting-Started-Guide/image-20230406234827815.png)
+![image-20230406234827815](https://assets.ng-tech.icu/book/LangChain-Chinese-Getting-Started-Guide/image-20230406234827815.png)
 
 配置好后，我们开始写代码
 
@@ -586,17 +586,17 @@ for tool in toolkit.get_tools():
 agent.run('请用中文总结最后一封"******@qq.com"发给我的邮件。并将总结发送给"******@qq.com"')
 ```
 
-![image-20230406234712909](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/LangChain-Chinese-Getting-Started-Guide/image-20230406234712909.png)
+![image-20230406234712909](https://assets.ng-tech.icu/book/LangChain-Chinese-Getting-Started-Guide/image-20230406234712909.png)
 
 我们可以看到他成功读取了`******@qq.com`给他发送的最后一封邮件，并将总结的内容又发送给了`******@qq.com`
 
 这是我发送给 Gmail 的邮件。
 
-![image-20230406234017369](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/LangChain-Chinese-Getting-Started-Guide/image-20230406234017369.png)
+![image-20230406234017369](https://assets.ng-tech.icu/book/LangChain-Chinese-Getting-Started-Guide/image-20230406234017369.png)
 
 这是他发送给 QQ 邮箱的邮件。
 
-![image-20230406234800632](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/LangChain-Chinese-Getting-Started-Guide/image-20230406234800632.png)
+![image-20230406234800632](https://assets.ng-tech.icu/book/LangChain-Chinese-Getting-Started-Guide/image-20230406234800632.png)
 
 这只是个小例子，因为 `zapier` 有数以千计的应用，所以我们可以轻松结合 openai api 搭建自己的工作流。
 
@@ -640,7 +640,7 @@ overall_chain = SimpleSequentialChain(chains=[location_chain, meal_chain], verbo
 review = overall_chain.run("Rome")
 ```
 
-![image-20230406000133339](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/LangChain-Chinese-Getting-Started-Guide/image-20230406000133339.png)
+![image-20230406000133339](https://assets.ng-tech.icu/book/LangChain-Chinese-Getting-Started-Guide/image-20230406000133339.png)
 
 ### **结构化输出**
 
@@ -695,7 +695,7 @@ llm_output = llm(promptValue)
 output_parser.parse(llm_output)
 ```
 
-![image-20230406000017276](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/LangChain-Chinese-Getting-Started-Guide/image-20230406000017276.png)
+![image-20230406000017276](https://assets.ng-tech.icu/book/LangChain-Chinese-Getting-Started-Guide/image-20230406000017276.png)
 
 ### **爬取网页并输出 JSON 数据**
 
@@ -785,7 +785,7 @@ agent.run("Who is Leo DiCaprio's girlfriend? What is her current age raised to t
 
 ```
 
-![image-20230406002117283](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/book/LangChain-Chinese-Getting-Started-Guide/image-20230406002117283.png)
+![image-20230406002117283](https://assets.ng-tech.icu/book/LangChain-Chinese-Getting-Started-Guide/image-20230406002117283.png)
 
 自定义工具里面有个比较有意思的地方，使用哪个工具的权重是靠 `工具中描述内容` 来实现的，和我们之前编程靠数值来控制权重完全不同。
 
