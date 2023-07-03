@@ -28,8 +28,9 @@
     - 4.3 LangChain [1]
       - [4.3.1 LangChain 中文入门教程](/LLM/LangChain/2023-LangChain%20中文入门教程.md)
     - 4.4 代码生成 [1]
-      - 4.4.1 99.参考资料 [1]
+      - 4.4.1 99.参考资料 [2]
         - [4.4.1.1 An example of LLM prompting for programming](/LLM/代码生成/99.参考资料/2023-An%20example%20of%20LLM%20prompting%20for%20programming.md)
+        - [4.4.1.2 花了大半个月，我终于逆向分析了 Github Copilot](/LLM/代码生成/99.参考资料/2023-花了大半个月，我终于逆向分析了%20Github%20Copilot.md)
     - 4.5 语言模型微调 [1]
       - 4.5.1 99.参考资料 [2]
         - [4.5.1.1 Finetuning Large Language Models](/LLM/语言模型微调/99.参考资料/2023-Finetuning%20Large%20Language%20Models.md)
