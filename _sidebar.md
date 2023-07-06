@@ -40,13 +40,14 @@
         - [4.6.1.1 目标函数](/LLM/预训练语言模型/BERT/目标函数.md)
         - [4.6.1.2 输入表示](/LLM/预训练语言模型/BERT/输入表示.md)
       - [4.6.2 Transformer [1]](/LLM/预训练语言模型/Transformer/README.md)
-        - 4.6.2.1 99.参考资料 [6]
+        - 4.6.2.1 99.参考资料 [7]
           - [4.6.2.1.1 NLP 中的 RNN、Seq2Seq 与 Attention 注意力机制](/LLM/预训练语言模型/Transformer/99.参考资料/2019-NLP%20中的%20RNN、Seq2Seq%20与%20Attention%20注意力机制.md)
-          - [4.6.2.1.2 完全解析 RNN, Seq2Seq, Attention 注意力机制](/LLM/预训练语言模型/Transformer/99.参考资料/2020-完全解析%20RNN,%20Seq2Seq,%20Attention%20注意力机制.md)
-          - [4.6.2.1.3 Transformer 模型详解（图解最完整版）](/LLM/预训练语言模型/Transformer/99.参考资料/2021-Transformer%20模型详解（图解最完整版）.md)
-          - [4.6.2.1.4 王嘉宁 【预训练语言模型】Attention Is All You Need（Transformer）](/LLM/预训练语言模型/Transformer/99.参考资料/2021-王嘉宁-【预训练语言模型】Attention%20Is%20All%20You%20Need（Transformer）.md)
-          - [4.6.2.1.5 超详细图解 Self Attention](/LLM/预训练语言模型/Transformer/99.参考资料/2021-超详细图解%20Self-Attention.md)
-          - [4.6.2.1.6 Transformers from Scratch](/LLM/预训练语言模型/Transformer/99.参考资料/2023-Transformers%20from%20Scratch.md)
+          - [4.6.2.1.2 举个例子讲下 Transformer 的输入输出细节及其他](/LLM/预训练语言模型/Transformer/99.参考资料/2020-举个例子讲下%20Transformer%20的输入输出细节及其他.md)
+          - [4.6.2.1.3 完全解析 RNN, Seq2Seq, Attention 注意力机制](/LLM/预训练语言模型/Transformer/99.参考资料/2020-完全解析%20RNN,%20Seq2Seq,%20Attention%20注意力机制.md)
+          - [4.6.2.1.4 Transformer 模型详解（图解最完整版）](/LLM/预训练语言模型/Transformer/99.参考资料/2021-Transformer%20模型详解（图解最完整版）.md)
+          - [4.6.2.1.5 王嘉宁 【预训练语言模型】Attention Is All You Need（Transformer）](/LLM/预训练语言模型/Transformer/99.参考资料/2021-王嘉宁-【预训练语言模型】Attention%20Is%20All%20You%20Need（Transformer）.md)
+          - [4.6.2.1.6 超详细图解 Self Attention](/LLM/预训练语言模型/Transformer/99.参考资料/2021-超详细图解%20Self-Attention.md)
+          - [4.6.2.1.7 Transformers from Scratch](/LLM/预训练语言模型/Transformer/99.参考资料/2023-Transformers%20from%20Scratch.md)
   - [5 循环神经网络](/循环神经网络/README.md)
     
   - 6 经典自然语言 [4]
