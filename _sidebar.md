@@ -26,7 +26,9 @@
         - 4.2.1.1 99.参考资料 [1]
           - [4.2.1.1.1 GPT 4 大模型硬核解读](/LLM/GPT/ChatGPT/99.参考资料/2023-GPT-4%20大模型硬核解读.md)
     - 4.3 LangChain [1]
-      - [4.3.1 LangChain 中文入门教程](/LLM/LangChain/2023-LangChain%20中文入门教程.md)
+      - 4.3.1 99.参考资料 [2]
+        - [4.3.1.1 Hacking LangChain For Fun and Profit](/LLM/LangChain/99.参考资料/2023-Hacking%20LangChain%20For%20Fun%20and%20Profit.md)
+        - [4.3.1.2 LangChain 中文入门教程](/LLM/LangChain/99.参考资料/2023-LangChain%20中文入门教程.md)
     - 4.4 代码生成 [1]
       - 4.4.1 99.参考资料 [2]
         - [4.4.1.1 An example of LLM prompting for programming](/LLM/代码生成/99.参考资料/2023-An%20example%20of%20LLM%20prompting%20for%20programming.md)

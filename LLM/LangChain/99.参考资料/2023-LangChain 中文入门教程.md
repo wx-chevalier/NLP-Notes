@@ -1,13 +1,12 @@
 # LangChain 中文入门教程
 
 > 为了便于阅读，已生成 gitbook：[https://liaokong.gitbook.io/llm-kai-fa-jiao-cheng/](https://liaokong.gitbook.io/llm-kai-fa-jiao-cheng/)
->
 > github 地址：[https://github.com/liaokongVFX/LangChain-Chinese-Getting-Started-Guide](https://github.com/liaokongVFX/LangChain-Chinese-Getting-Started-Guide)
 
 > 加了个 [CHANGELOG](CHANGELOG.md),更新了新的内容我会写在这里，方便之前看过的朋友快速查看新的更新内容
 
 > 如果想把 OPENAI API 的请求根路由修改成自己的代理地址，可以通过设置环境变量 “OPENAI_API_BASE” 来进行修改。
->
+
 > 相关参考代码：[https://github.com/openai/openai-python/blob/d6fa3bfaae69d639b0dd2e9251b375d7070bbef1/openai/\_\_init\_\_.py#L48](https://github.com/openai/openai-python/blob/d6fa3bfaae69d639b0dd2e9251b375d7070bbef1/openai/__init__.py#L48)
 >
 > 或在初始化 OpenAI 相关模型对象时，传入“openai_api_base” 变量。
@@ -378,7 +377,6 @@ docsearch.persist()
 
 # 加载数据
 docsearch = Chroma(persist_directory="D:/vector_store", embedding_function=embeddings)
-
 ```
 
 **Pinecone**
