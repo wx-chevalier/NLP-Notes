@@ -12,7 +12,7 @@
 
 **1.encoder**
 
-对于机器翻译来说，一个样本是由原始句子和翻译后的句子组成的。比如原始句子是： “我爱机器学习”，那么翻译后是 ’i love machine learning‘。 则该一个样本就是由“我爱机器学习”和 "i love machine learning" 组成。
+对于机器翻译来说，一个样本是由原始句子和翻译后的句子组成的。比如原始句子是： “我爱机器学习”，那么翻译后是 ’i love machine learning‘。则该一个样本就是由“我爱机器学习”和 "i love machine learning" 组成。
 
 这个样本的原始句子的单词长度是 length=4,即‘我’ ‘爱’ ‘机器’ ‘学习’。经过 embedding 后每个词的 embedding 向量是 512。那么“我爱机器学习”这个句子的 embedding 后的维度是[4，512 ] （若是批量输入，则 embedding 后的维度是[batch, 4, 512]）。
 
@@ -64,7 +64,7 @@ Sinusoidal Positional Embedding 具体怎么得来呢，我们可以先思考下
 
 ![img](https://pic3.zhimg.com/80/v2-8f0301ee897ea88a71e16312812c4b0e_1440w.webp)
 
-关于 attention 操作，网上讲的很多，也很简单，就不写了。不过需要值得注意的一点是，单头 attention 的 Q/K/V 的 shape 和多头 attention 的每个头的 Qi/Ki/Vi 的大小是不一样的，假如单头 attention 的 Q/K/V 的参数矩阵 WQ/WK/WV 的 shape 分别是[512, 512](此处假设encoder的输入和输出是一样的shape)，那么多头 attention (假设 8 个头)的每个头的 Qi/Ki/Vi 的参数矩阵 WQi/WKi/WVi 大小是[512， 512/8].
+关于 attention 操作，网上讲的很多，也很简单，就不写了。不过需要值得注意的一点是，单头 attention 的 Q/K/V 的 shape 和多头 attention 的每个头的 Qi/Ki/Vi 的大小是不一样的，假如单头 attention 的 Q/K/V 的参数矩阵 WQ/WK/WV 的 shape 分别是[512, 512](此处假设encoder的输入和输出是一样的shape)，那么多头 attention (假设 8 个头)的每个头的 Qi/Ki/Vi 的参数矩阵 WQi/WKi/WVi 大小是[512，512/8].
 
 **FeedForward**
 
@@ -186,7 +186,7 @@ Sinusoidal Positional Embedding 具体怎么得来呢，我们可以先思考下
 
 **测试**
 
-训练好模型， 测试的时候，比如用 '机器学习很有趣'当作测试样本，得到其英语翻译。
+训练好模型，测试的时候，比如用 '机器学习很有趣'当作测试样本，得到其英语翻译。
 
 这一句经过 encoder 后得到输出 tensor，送入到 decoder(并不是当作 decoder 的直接输入)：
 
