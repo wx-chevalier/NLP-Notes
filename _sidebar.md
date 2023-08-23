@@ -1,55 +1,55 @@
-  - [1 00.导论](/00.导论/README.md)
+  - [1 00~导论](/00~导论/README.md)
     
-  - 2 99.参考资料 [5]
-    - [2.1 Numbers every LLM Developer should know](/99.参考资料/2023-Numbers%20every%20LLM%20Developer%20should%20know.md)
+  - 2 99~参考资料 [5]
+    - [2.1 Numbers every LLM Developer should know](/99~参考资料/2023-Numbers%20every%20LLM%20Developer%20should%20know.md)
     - 2.2 吴恩达 《Building Systems with the ChatGPT API》 [3]
-      - [2.2.1 1.Introduction](/99.参考资料/2023-吴恩达-《Building%20Systems%20with%20the%20ChatGPT%20API》/1.Introduction.md)
-      - [2.2.2 11.conclusion](/99.参考资料/2023-吴恩达-《Building%20Systems%20with%20the%20ChatGPT%20API》/11.conclusion.md)
-      - [2.2.3 readme](/99.参考资料/2023-吴恩达-《Building%20Systems%20with%20the%20ChatGPT%20API》/readme.md)
+      - [2.2.1 1.Introduction](/99~参考资料/2023-吴恩达-《Building%20Systems%20with%20the%20ChatGPT%20API》/1.Introduction.md)
+      - [2.2.2 11.conclusion](/99~参考资料/2023-吴恩达-《Building%20Systems%20with%20the%20ChatGPT%20API》/11.conclusion.md)
+      - [2.2.3 readme](/99~参考资料/2023-吴恩达-《Building%20Systems%20with%20the%20ChatGPT%20API》/readme.md)
     - 2.3 吴恩达 《ChatGPT Prompt Engineering for Developers》 [2]
-      - [2.3.1 00.README](/99.参考资料/2023-吴恩达-《ChatGPT%20Prompt%20Engineering%20for%20Developers》/00.README.md)
-      - [2.3.2 01. 简介](/99.参考资料/2023-吴恩达-《ChatGPT%20Prompt%20Engineering%20for%20Developers》/01.%20简介.md)
-      - [2.3.3 09. 总结](/99.参考资料/2023-吴恩达-《ChatGPT%20Prompt%20Engineering%20for%20Developers》/09.%20总结.md)
+      - [2.3.1 00.README](/99~参考资料/2023-吴恩达-《ChatGPT%20Prompt%20Engineering%20for%20Developers》/00.README.md)
+      - [2.3.2 01. 简介](/99~参考资料/2023-吴恩达-《ChatGPT%20Prompt%20Engineering%20for%20Developers》/01.%20简介.md)
+      - [2.3.3 09. 总结](/99~参考资料/2023-吴恩达-《ChatGPT%20Prompt%20Engineering%20for%20Developers》/09.%20总结.md)
     - 2.4 吴恩达 《LangChain for LLM Application Development》 [3]
-      - [2.4.1 1.开篇介绍](/99.参考资料/2023-吴恩达-《LangChain%20for%20LLM%20Application%20Development》/1.开篇介绍.md)
-      - [2.4.2 8.课程总结](/99.参考资料/2023-吴恩达-《LangChain%20for%20LLM%20Application%20Development》/8.课程总结.md)
-      - [2.4.3 readme](/99.参考资料/2023-吴恩达-《LangChain%20for%20LLM%20Application%20Development》/readme.md)
-    - [2.5 陆奇 我的大模型世界观](/99.参考资料/2023-陆奇-我的大模型世界观.md)
+      - [2.4.1 1.开篇介绍](/99~参考资料/2023-吴恩达-《LangChain%20for%20LLM%20Application%20Development》/1.开篇介绍.md)
+      - [2.4.2 8.课程总结](/99~参考资料/2023-吴恩达-《LangChain%20for%20LLM%20Application%20Development》/8.课程总结.md)
+      - [2.4.3 readme](/99~参考资料/2023-吴恩达-《LangChain%20for%20LLM%20Application%20Development》/readme.md)
+    - [2.5 陆奇 我的大模型世界观](/99~参考资料/2023-陆奇-我的大模型世界观.md)
   - [3 INTRODUCTION](/INTRODUCTION.md)
   - [4 LLM [6]](/LLM/README.md)
-    - 4.1 99.参考资料 [1]
-      - [4.1.1 cohere LLM University [1]](/LLM/99.参考资料/cohere-LLM%20University/README.md)
-        - [4.1.1.1 01.What are Large Language Models? [1]](/LLM/99.参考资料/cohere-LLM%20University/01.What%20are%20Large%20Language%20Models?/README.md)
-          - [4.1.1.1.1 01.Text Embeddings](/LLM/99.参考资料/cohere-LLM%20University/01.What%20are%20Large%20Language%20Models?/01.Text%20Embeddings.md)
+    - 4.1 99~参考资料 [1]
+      - [4.1.1 cohere LLM University [1]](/LLM/99~参考资料/cohere-LLM%20University/README.md)
+        - [4.1.1.1 01.What are Large Language Models? [1]](/LLM/99~参考资料/cohere-LLM%20University/01.What%20are%20Large%20Language%20Models?/README.md)
+          - [4.1.1.1.1 01.Text Embeddings](/LLM/99~参考资料/cohere-LLM%20University/01.What%20are%20Large%20Language%20Models?/01.Text%20Embeddings.md)
     - 4.2 GPT [1]
       - 4.2.1 ChatGPT [1]
-        - 4.2.1.1 99.参考资料 [1]
-          - [4.2.1.1.1 GPT 4 大模型硬核解读](/LLM/GPT/ChatGPT/99.参考资料/2023-GPT-4%20大模型硬核解读.md)
+        - 4.2.1.1 99~参考资料 [1]
+          - [4.2.1.1.1 GPT 4 大模型硬核解读](/LLM/GPT/ChatGPT/99~参考资料/2023-GPT-4%20大模型硬核解读.md)
     - 4.3 LangChain [1]
-      - 4.3.1 99.参考资料 [2]
-        - [4.3.1.1 Hacking LangChain For Fun and Profit](/LLM/LangChain/99.参考资料/2023-Hacking%20LangChain%20For%20Fun%20and%20Profit.md)
-        - [4.3.1.2 LangChain 中文入门教程](/LLM/LangChain/99.参考资料/2023-LangChain%20中文入门教程.md)
+      - 4.3.1 99~参考资料 [2]
+        - [4.3.1.1 Hacking LangChain For Fun and Profit](/LLM/LangChain/99~参考资料/2023-Hacking%20LangChain%20For%20Fun%20and%20Profit.md)
+        - [4.3.1.2 LangChain 中文入门教程](/LLM/LangChain/99~参考资料/2023-LangChain%20中文入门教程.md)
     - 4.4 代码生成 [1]
-      - 4.4.1 99.参考资料 [2]
-        - [4.4.1.1 An example of LLM prompting for programming](/LLM/代码生成/99.参考资料/2023-An%20example%20of%20LLM%20prompting%20for%20programming.md)
-        - [4.4.1.2 花了大半个月，我终于逆向分析了 Github Copilot](/LLM/代码生成/99.参考资料/2023-花了大半个月，我终于逆向分析了%20Github%20Copilot.md)
+      - 4.4.1 99~参考资料 [2]
+        - [4.4.1.1 An example of LLM prompting for programming](/LLM/代码生成/99~参考资料/2023-An%20example%20of%20LLM%20prompting%20for%20programming.md)
+        - [4.4.1.2 花了大半个月，我终于逆向分析了 Github Copilot](/LLM/代码生成/99~参考资料/2023-花了大半个月，我终于逆向分析了%20Github%20Copilot.md)
     - 4.5 语言模型微调 [1]
-      - 4.5.1 99.参考资料 [2]
-        - [4.5.1.1 Finetuning Large Language Models](/LLM/语言模型微调/99.参考资料/2023-Finetuning%20Large%20Language%20Models.md)
-        - [4.5.1.2 Prompt Tuning：深度解读一种新的微调范式](/LLM/语言模型微调/99.参考资料/2023-Prompt-Tuning：深度解读一种新的微调范式.md)
+      - 4.5.1 99~参考资料 [2]
+        - [4.5.1.1 Finetuning Large Language Models](/LLM/语言模型微调/99~参考资料/2023-Finetuning%20Large%20Language%20Models.md)
+        - [4.5.1.2 Prompt Tuning：深度解读一种新的微调范式](/LLM/语言模型微调/99~参考资料/2023-Prompt-Tuning：深度解读一种新的微调范式.md)
     - 4.6 预训练语言模型 [2]
       - [4.6.1 BERT [2]](/LLM/预训练语言模型/BERT/README.md)
         - [4.6.1.1 目标函数](/LLM/预训练语言模型/BERT/目标函数.md)
         - [4.6.1.2 输入表示](/LLM/预训练语言模型/BERT/输入表示.md)
       - [4.6.2 Transformer [1]](/LLM/预训练语言模型/Transformer/README.md)
-        - 4.6.2.1 99.参考资料 [7]
-          - [4.6.2.1.1 NLP 中的 RNN、Seq2Seq 与 Attention 注意力机制](/LLM/预训练语言模型/Transformer/99.参考资料/2019-NLP%20中的%20RNN、Seq2Seq%20与%20Attention%20注意力机制.md)
-          - [4.6.2.1.2 举个例子讲下 Transformer 的输入输出细节及其他](/LLM/预训练语言模型/Transformer/99.参考资料/2020-举个例子讲下%20Transformer%20的输入输出细节及其他.md)
-          - [4.6.2.1.3 完全解析 RNN, Seq2Seq, Attention 注意力机制](/LLM/预训练语言模型/Transformer/99.参考资料/2020-完全解析%20RNN,%20Seq2Seq,%20Attention%20注意力机制.md)
-          - [4.6.2.1.4 Transformer 模型详解（图解最完整版）](/LLM/预训练语言模型/Transformer/99.参考资料/2021-Transformer%20模型详解（图解最完整版）.md)
-          - [4.6.2.1.5 王嘉宁 【预训练语言模型】Attention Is All You Need（Transformer）](/LLM/预训练语言模型/Transformer/99.参考资料/2021-王嘉宁-【预训练语言模型】Attention%20Is%20All%20You%20Need（Transformer）.md)
-          - [4.6.2.1.6 超详细图解 Self Attention](/LLM/预训练语言模型/Transformer/99.参考资料/2021-超详细图解%20Self-Attention.md)
-          - [4.6.2.1.7 Transformers from Scratch](/LLM/预训练语言模型/Transformer/99.参考资料/2023-Transformers%20from%20Scratch.md)
+        - 4.6.2.1 99~参考资料 [7]
+          - [4.6.2.1.1 NLP 中的 RNN、Seq2Seq 与 Attention 注意力机制](/LLM/预训练语言模型/Transformer/99~参考资料/2019-NLP%20中的%20RNN、Seq2Seq%20与%20Attention%20注意力机制.md)
+          - [4.6.2.1.2 举个例子讲下 Transformer 的输入输出细节及其他](/LLM/预训练语言模型/Transformer/99~参考资料/2020-举个例子讲下%20Transformer%20的输入输出细节及其他.md)
+          - [4.6.2.1.3 完全解析 RNN, Seq2Seq, Attention 注意力机制](/LLM/预训练语言模型/Transformer/99~参考资料/2020-完全解析%20RNN,%20Seq2Seq,%20Attention%20注意力机制.md)
+          - [4.6.2.1.4 Transformer 模型详解（图解最完整版）](/LLM/预训练语言模型/Transformer/99~参考资料/2021-Transformer%20模型详解（图解最完整版）.md)
+          - [4.6.2.1.5 王嘉宁 【预训练语言模型】Attention Is All You Need（Transformer）](/LLM/预训练语言模型/Transformer/99~参考资料/2021-王嘉宁-【预训练语言模型】Attention%20Is%20All%20You%20Need（Transformer）.md)
+          - [4.6.2.1.6 超详细图解 Self Attention](/LLM/预训练语言模型/Transformer/99~参考资料/2021-超详细图解%20Self-Attention.md)
+          - [4.6.2.1.7 Transformers from Scratch](/LLM/预训练语言模型/Transformer/99~参考资料/2023-Transformers%20from%20Scratch.md)
   - [5 循环神经网络](/循环神经网络/README.md)
     
   - 6 经典自然语言 [4]
