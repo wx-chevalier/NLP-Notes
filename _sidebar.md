@@ -39,10 +39,13 @@
       - 4.5.1 99~参考资料 [2]
         - [4.5.1.1 An example of LLM prompting for programming](/LLM/代码生成/99~参考资料/2023-An%20example%20of%20LLM%20prompting%20for%20programming.md)
         - [4.5.1.2 花了大半个月，我终于逆向分析了 Github Copilot](/LLM/代码生成/99~参考资料/2023-花了大半个月，我终于逆向分析了%20Github%20Copilot.md)
-    - 4.6 语言模型微调 [1]
+    - 4.6 语言模型微调 [2]
       - 4.6.1 99~参考资料 [2]
         - [4.6.1.1 Finetuning Large Language Models](/LLM/语言模型微调/99~参考资料/2023-Finetuning%20Large%20Language%20Models.md)
         - [4.6.1.2 Prompt Tuning：深度解读一种新的微调范式](/LLM/语言模型微调/99~参考资料/2023-Prompt-Tuning：深度解读一种新的微调范式.md)
+      - 4.6.2 LoRA [1]
+        - 4.6.2.1 99~参考资料 [1]
+          - [4.6.2.1.1 2023~LoRA From Scratch – Implement Low Rank Adaptation for LLMs in PyTorch](/LLM/语言模型微调/LoRA/99~参考资料/2023~LoRA%20From%20Scratch%20–%20Implement%20Low-Rank%20Adaptation%20for%20LLMs%20in%20PyTorch.md)
     - 4.7 预训练语言模型 [2]
       - [4.7.1 BERT [2]](/LLM/预训练语言模型/BERT/README.md)
         - [4.7.1.1 目标函数](/LLM/预训练语言模型/BERT/目标函数.md)
