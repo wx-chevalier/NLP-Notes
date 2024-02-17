@@ -17,13 +17,15 @@
     - [2.5 陆奇 我的大模型世界观](/99~参考资料/2023-陆奇-我的大模型世界观.md)
   - [3 INTRODUCTION](/INTRODUCTION.md)
   - [4 LLM [7]](/LLM/README.md)
-    - 4.1 99~参考资料 [2]
-      - [4.1.1 2023~赵鑫~大语言模型综述 [2]](/LLM/99~参考资料/2023~赵鑫~大语言模型综述/README.md)
-        - [4.1.1.1 01~引言](/LLM/99~参考资料/2023~赵鑫~大语言模型综述/01~引言.md)
-        - [4.1.1.2 09~参考](/LLM/99~参考资料/2023~赵鑫~大语言模型综述/09~参考.md)
-      - [4.1.2 cohere LLM University [1]](/LLM/99~参考资料/cohere-LLM%20University/README.md)
-        - [4.1.2.1 01.What are Large Language Models? [1]](/LLM/99~参考资料/cohere-LLM%20University/01.What%20are%20Large%20Language%20Models?/README.md)
-          - [4.1.2.1.1 01.Text Embeddings](/LLM/99~参考资料/cohere-LLM%20University/01.What%20are%20Large%20Language%20Models?/01.Text%20Embeddings.md)
+    - 4.1 99~参考资料 [3]
+      - [4.1.1 2023~Ben Clarkson~Building an LLM from scratch](/LLM/99~参考资料/2023~Ben%20Clarkson~Building%20an%20LLM%20from%20scratch/README.md)
+        
+      - [4.1.2 2023~赵鑫~大语言模型综述 [2]](/LLM/99~参考资料/2023~赵鑫~大语言模型综述/README.md)
+        - [4.1.2.1 01~引言](/LLM/99~参考资料/2023~赵鑫~大语言模型综述/01~引言.md)
+        - [4.1.2.2 09~参考](/LLM/99~参考资料/2023~赵鑫~大语言模型综述/09~参考.md)
+      - [4.1.3 cohere~LLM University [1]](/LLM/99~参考资料/cohere~LLM%20University/README.md)
+        - [4.1.3.1 01~What are Large Language Models? [1]](/LLM/99~参考资料/cohere~LLM%20University/01~What%20are%20Large%20Language%20Models?/README.md)
+          - [4.1.3.1.1 01.Text Embeddings](/LLM/99~参考资料/cohere~LLM%20University/01~What%20are%20Large%20Language%20Models?/01.Text%20Embeddings.md)
     - 4.2 Agent [1]
       - 4.2.1 99~参考资料 [1]
         - [4.2.1.1 2023~LLM Agent Survey](/LLM/Agent/99~参考资料/2023~LLM%20Agent%20Survey.md)
