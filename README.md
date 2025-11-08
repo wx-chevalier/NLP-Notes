@@ -8,7 +8,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/wx-chevalier/NLP-Notes">
-    <img src="https://assets.ng-tech.icu/item/header.svg" alt="Logo" style="width: 100vw;height: 400px" />
+    <img src="https://ngte-superbed.oss-cn-beijing.aliyuncs.com/item/header.svg" alt="Logo" style="width: 100vw;height: 400px" />
   </a>
 
   <p align="center">
@@ -30,9 +30,9 @@
 
 20 年来，NLP 的技术也经历了从基于语法语义规则系统（1970s-1990s）迁移到基于统计机器学习的框架（2000s-2014）并进一步发展为基于大数据和深度学习的 NLP 技术范式（2014 至今）。
 
-![NLP 领域全景图](https://assets.ng-tech.icu/item/20230224144750.png)
+![NLP 领域全景图](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/item/20230224144750.png)
 
-![NLP 常见任务](https://assets.ng-tech.icu/item/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%20%E4%BB%BB%E5%8A%A1%E5%88%86%E7%B1%BB.png)
+![NLP 常见任务](https://ngte-superbed.oss-cn-beijing.aliyuncs.com/item/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%20%E4%BB%BB%E5%8A%A1%E5%88%86%E7%B1%BB.png)
 
 # Nav | 关联导航
 
