@@ -31,21 +31,21 @@ model = word2vec.Word2Vec(sentences, min_count=1)
 
 # 进行相关性比较
 model.similarity('dogs','you')
-```python
+```
 这里我们调用`Word2Vec`创建模型实际上会对数据执行两次迭代操作，第一轮操作会统计词频来构建内部的词典数结构，第二轮操作会进行神经网络训练，而这两个步骤是可以分步进行的，这样对于某些不可重复的流(譬如 Kafka 等流式数据中)可以手动控制：
 
 ```python
 model = gensim.models.Word2Vec(iter=1)  # an empty model, no training yet
 model.build_vocab(some_sentences)  # can be a non-repeatable, 1-pass generator
 model.train(other_sentences)  # can be a non-repeatable, 1-pass generator
-```python
+```
 ### Word2Vec 参数
 
 - min_count
 
 ```python
 model = Word2Vec(sentences, min_count=10)  # default value is 5
-```python
+```
 在不同大小的语料集中，我们对于基准词频的需求也是不一样的。譬如在较大的语料集中，我们希望忽略那些只出现过一两次的单词，这里我们就可以通过设置`min_count`参数进行控制。一般而言，合理的参数值会设置在 0~100 之间。
 
 - size
@@ -54,14 +54,14 @@ model = Word2Vec(sentences, min_count=10)  # default value is 5
 
 ```python
 model = Word2Vec(sentences, size=200)  # default value is 100
-```python
+```
 - workers
 
 `workers`参数用于设置并发训练时候的线程数，不过仅当`Cython`安装的情况下才会起作用：
 
 ```python
 model = Word2Vec(sentences, workers=4) # default = 1 worker = no parallelization
-```python
+```
 ## 外部语料集
 
 在真实的训练场景中我们往往会使用较大的语料集进行训练，譬如这里以 Word2Vec 官方的[text8](http://mattmahoney.net/dc/text8.zip)为例，只要改变模型中的语料集开源即可：
@@ -69,7 +69,7 @@ model = Word2Vec(sentences, workers=4) # default = 1 worker = no parallelization
 ```python
 sentences = word2vec.Text8Corpus('text8')
 model = word2vec.Word2Vec(sentences, size=200)
-```python
+```
 这里语料集中的语句是经过分词的，因此可以直接使用。笔者在第一次使用该类时报错了，因此把 Gensim 中的源代码贴一下，也方便以后自定义处理其他语料集：
 
 ```python
@@ -99,7 +99,7 @@ class Text8Corpus(object):
                 while len(sentence) >= self.max_sentence_length:
                     yield sentence[:self.max_sentence_length]
                     sentence = sentence[self.max_sentence_length:]
-```python
+```
 我们在上文中也提及，如果是对于大量的输入语料集或者需要整合磁盘上多个文件夹下的数据，我们可以以迭代器的方式而不是一次性将全部内容读取到内存中来节省 RAM 空间：
 
 ```python
@@ -114,7 +114,7 @@ class MySentences(object):
 
 sentences = MySentences('/some/directory') # a memory-friendly iterator
 model = gensim.models.Word2Vec(sentences)
-```python
+```
 ## 模型保存与读取
 
 ```python
@@ -133,7 +133,7 @@ model1 = word2vec.Word2Vec.load_word2vec_format('text.model.bin', binary=True)
 2015-02-24 11:22:08,185 : INFO : loading projection weights from text.model.bin
 2015-02-24 11:22:10,322 : INFO : loaded (71290, 200) matrix from text.model.bin
 2015-02-24 11:22:10,322 : INFO : precomputing L2-norms of word weight vectors
-```python
+```
 ## 模型预测
 
 Word2Vec 最著名的效果即是以语义化的方式推断出相似词汇：
@@ -156,13 +156,13 @@ model.most_similar(['man'])
  (u'creature', 0.4227582812309265),
  (u'robot', 0.417464017868042),
  (u'mortal', 0.41728296875953674)]
-```python
+```
 如果我们希望直接获取某个单词的向量表示，直接以下标方式访问即可：
 
 ```python
 model['computer']  # raw NumPy vector of a word
 array([-0.00449447, -0.00310097,  0.02421786, ...], dtype=float32)
-```python
+```
 ### 模型评估
 
 Word2Vec 的训练属于无监督模型，并没有太多的类似于监督学习里面的客观评判方式，更多的依赖于端应用。Google 之前公开了 20000 条左右的语法与语义化训练样本，每一条遵循`A is to B as C is to D`这个格式，地址在[这里](https://word2vec.googlecode.com/svn/trunk/questions-words.txt):
@@ -179,7 +179,7 @@ model.accuracy('/tmp/questions-words.txt')
 2014-02-02 00:15:18,525 : INFO : gram8-plural: 89.6% (889/992)
 2014-02-02 00:28:18,140 : INFO : gram9-plural-verbs: 68.7% (482/702)
 2014-02-02 00:28:18,140 : INFO : total: 74.3% (5654/7614)
-```python
+```
 还是需要强调下，训练集上表现的好也不意味着 Word2Vec 在真实应用中就会表现的很好，还是需要因地制宜。
 
 # 模型训练
@@ -232,4 +232,4 @@ def wv_visualizer(model, word = ["man"]):
 
 # 调用时传入目标词组即可
 wv_visualizer(model,["China","Airline"])
-```python
+```

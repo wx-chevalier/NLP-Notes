@@ -93,7 +93,7 @@ for document in range(num_documents):
         # 采样出某个生成词
         term_distribution_param = term_distribution_by_topic[topic]
         word_index[document].append(choice(vocabulary, p=term_distribution_param))
-```python
+```
 如果还有困惑的同学可以参考如下 Python 代码：
 
 ```py
@@ -113,7 +113,7 @@ def perplexity(self, docs=None):
             log_per -= numpy.log(numpy.inner(phi[:,w], theta))
         N += len(doc)
     return numpy.exp(log_per / N)
-```python
+```
 # Introduction
 
 > LDA has been widely used in textual analysis,
