@@ -4,7 +4,6 @@ Yay, no errors, warnings, or alerts!
 
 Conversion time: 0.472 seconds.
 
-
 Using this Markdown file:
 
 1. Paste this output into your source file.
@@ -14,9 +13,9 @@ Using this Markdown file:
 
 Conversion notes:
 
-* Docs to Markdown version 1.0β34
-* Wed May 17 2023 09:47:33 GMT-0700 (PDT)
-* Source doc: Numbers every LLM developer should know
+- Docs to Markdown version 1.0β34
+- Wed May 17 2023 09:47:33 GMT-0700 (PDT)
+- Source doc: Numbers every LLM developer should know
 ----->
 
 # Numbers every LLM Developer should know

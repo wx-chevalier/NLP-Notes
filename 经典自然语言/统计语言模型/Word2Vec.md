@@ -28,18 +28,16 @@ Word2vec 神经网络的输出是一个词表，每个词由一个向量来表�
 
 - 文本文件预处理
 
-```
+```python
 word2vec.word2phrase('/Users/drodriguez/Downloads/text8', '/Users/drodriguez/Downloads/text8-phrases', verbose=True)
-```
-
-```
+```python
+```python
 [u'word2phrase', u'-train', u'/Users/drodriguez/Downloads/text8', u'-output', u'/Users/drodriguez/Downloads/text8-phrases', u'-min-count', u'5', u'-threshold', u'100', u'-debug', u'2']
 Starting training using file /Users/drodriguez/Downloads/text8
 Words processed: 17000K     Vocab size: 4399K
 Vocab size (unigrams + bigrams): 2419827
 Words in train file: 17005206
-```
-
+```python
 ### 中文实验
 
 - 语料
@@ -48,24 +46,21 @@ Words in train file: 17005206
 
         从ftp上下载数据包SogouCA.tar.gz：
 
-```
+```python
 1 wget ftp://ftp.labs.sogou.com/Data/SogouCA/SogouCA.tar.gz --ftp-user=hebin_hit@foxmail.com --ftp-password=4FqLSYdNcrDXvNDi -r
-```
-
+```python
           解压数据包：
 
-```
+```python
 1 gzip -d SogouCA.tar.gz
 2 tar -xvf SogouCA.tar
-```
-
+```python
           再将生成的txt文件归并到SogouCA.txt中，取出其中包含content的行并转码，得到语料corpus.txt，大小为2.7G。
 
-```
+```python
 1 cat *.txt > SogouCA.txt
 2 cat SogouCA.txt | iconv -f gbk -t utf-8 -c | grep "<content>" > corpus.txt
-```
-
+```python
 - 分词
 
   用 ANSJ 对 corpus.txt 进行分词，得到分词结果 resultbig.txt，大小为 3.1G。在分词工具 seg_tool 目录下先编译再执行得到分词结果 resultbig.txt，内含 426221 个词，次数总计 572308385 个。
@@ -74,16 +69,14 @@ Words in train file: 17005206
 
 ```shell
 nohup ./word2vec -train resultbig.txt -output vectors.bin -cbow 0 -size 200 -window 5 -negative 0 -hs 1 -sample 1e-3 -threads 12 -binary 1 &
-```
-
+```python
 - 分析
 
 (1)相似词计算
 
-```
+```python
 ./distance vectors.bin
-```
-
+```python
      ./distance可以看成计算词与词之间的距离，把词看成向量空间上的一个点，distance看成向量空间上点与点的距离。
 
 (2)潜在的语言学规律
@@ -99,17 +92,15 @@ nohup ./word2vec -train resultbig.txt -output vectors.bin -cbow 0 -size 200 -win
 ```shell
 1 nohup ./word2vec -train resultbig.txt -output classes.txt -cbow 0 -size 200 -window 5 -negative 0 -hs 1 -sample 1e-3 -threads 12 -classes 500  &
 2 sort classes.txt -k 2 -n > classes_sorted_sogouca.txt
-```
-
+```python
 (4)短语分析
 
     先利用经过分词的语料resultbig.txt中得出包含词和短语的文件sogouca_phrase.txt，再训练该文件中词与短语的向量表示。
 
-```
+```python
 1 ./word2phrase -train resultbig.txt -output sogouca_phrase.txt -threshold 500 -debug 2
 2 ./word2vec -train sogouca_phrase.txt -output vectors_sogouca_phrase.bin -cbow 0 -size 300 -window 10 -negative 0 -hs 1 -sample 1e-3 -threads 12 -binary 1
-```
-
+```python
 ## 维基百科实验
 
 # Algorithms
@@ -207,11 +198,10 @@ word2vec 可调整的超参数有很多：
 
 - [中英文维基百科语料上的 Word2Vec 实验](http://www.52nlp.cn/%E4%B8%AD%E8%8B%B1%E6%96%87%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91%E8%AF%AD%E6%96%99%E4%B8%8A%E7%9A%84word2vec%E5%AE%9E%E9%AA%8C)
 
-```
+```python
 %load_ext autoreload
 %autoreload 2
-```
-
+```python
 # word2vec
 
 This notebook is equivalent to `demo-word.sh`, `demo-analogy.sh`, `demo-phrases.sh` and `demo-classes.sh` from Google.
@@ -220,94 +210,80 @@ This notebook is equivalent to `demo-word.sh`, `demo-analogy.sh`, `demo-phrases.
 
 Download some data, for example: [http://mattmahoney.net/dc/text8.zip](http://mattmahoney.net/dc/text8.zip)
 
-```
+```python
 import word2vec
-```
-
+```python
 Run `word2phrase` to group up similar words "Los Angeles" to "Los_Angeles"
 
-```
+```python
 word2vec.word2phrase('/Users/drodriguez/Downloads/text8', '/Users/drodriguez/Downloads/text8-phrases', verbose=True)
-```
-
-```
+```python
+```python
 [u'word2phrase', u'-train', u'/Users/drodriguez/Downloads/text8', u'-output', u'/Users/drodriguez/Downloads/text8-phrases', u'-min-count', u'5', u'-threshold', u'100', u'-debug', u'2']
 Starting training using file /Users/drodriguez/Downloads/text8
 Words processed: 17000K     Vocab size: 4399K
 Vocab size (unigrams + bigrams): 2419827
 Words in train file: 17005206
-```
-
+```python
 This will create a `text8-phrases` that we can use as a better input for `word2vec`.Note that you could easily skip this previous step and use the origial data as input for `word2vec`.
 
 Train the model using the `word2phrase` output.
 
-```
+```python
 word2vec.word2vec('/Users/drodriguez/Downloads/text8-phrases', '/Users/drodriguez/Downloads/text8.bin', size=100, verbose=True)
-```
-
-```
+```python
+```python
 Starting training using file /Users/drodriguez/Downloads/text8-phrases
 Vocab size: 98331
 Words in train file: 15857306
 Alpha: 0.000002  Progress: 100.03%  Words/thread/sec: 286.52k
-```
-
+```python
 That generated a `text8.bin` file containing the word vectors in a binary format.
 
 Do the clustering of the vectors based on the trained model.
 
-```
+```python
 word2vec.word2clusters('/Users/drodriguez/Downloads/text8', '/Users/drodriguez/Downloads/text8-clusters.txt', 100, verbose=True)
-```
-
-```
+```python
+```python
 Starting training using file /Users/drodriguez/Downloads/text8
 Vocab size: 71291
 Words in train file: 16718843
 Alpha: 0.000002  Progress: 100.02%  Words/thread/sec: 287.55k
-```
-
+```python
 That created a `text8-clusters.txt` with the cluster for every word in the vocabulary
 
 ## Predictions
 
-```
+```python
 import word2vec
-```
-
+```python
 Import the `word2vec` binary file created above
 
-```
+```python
 model = word2vec.load('/Users/drodriguez/Downloads/text8.bin')
-```
-
+```python
 We can take a look at the vocabulaty as a numpy array
 
-```
+```python
 model.vocab
-```
-
-```
+```python
+```python
 array([u'</s>', u'the', u'of', ..., u'dakotas', u'nias', u'burlesques'],
       dtype='<U78')
-```
-
+```python
 Or take a look at the whole matrix
 
-```
+```python
 model.vectors.shape
-```
-
-```
+```python
+```python
 (98331, 100)
-```
-
-```
+```python
+```python
 model.vectors
-```
-
-```
+```python
+```python
 array([[ 0.14333282,  0.15825513, -0.13715845, ...,  0.05456942,
          0.10955409,  0.00693387],
        [ 0.1220774,  0.04939618,  0.09545057, ..., -0.00804222,
@@ -321,40 +297,33 @@ array([[ 0.14333282,  0.15825513, -0.13715845, ...,  0.05456942,
         -0.18154132, -0.06813737],
        [ 0.02778879, -0.06457976,  0.07102411, ..., -0.00270281,
         -0.0471223, -0.135444  ]])
-```
-
+```python
 We can retreive the vector of individual words
 
-```
+```python
 model['dog'].shape
-```
-
-```
+```python
+```python
 (100,)
-```
-
-```
+```python
+```python
 model['dog'][:10]
-```
-
-```
+```python
+```python
 array([ 0.05753701,  0.0585594,  0.11341395,  0.02016246,  0.11514406,
         0.01246986,  0.00801256,  0.17529851,  0.02899276,  0.0203866 ])
-```
-
+```python
 We can do simple queries to retreive words similar to "socks" based on cosine similarity:
 
-```
+```python
 indexes, metrics = model.cosine('socks')
 indexes, metrics
-```
-
-```
+```python
+```python
 (array([20002, 28915, 30711, 33874, 27482, 14631, 22992, 24195, 25857, 23705]),
  array([ 0.8375354,  0.83590846,  0.82818749,  0.82533614,  0.82278399,
          0.81476386,  0.8139092,  0.81253798,  0.8105933,  0.80850171]))
-```
-
+```python
 This returned a tuple with 2 items:
 
 1. numpy array with the indexes of the similar words in the vocabulary
@@ -362,38 +331,33 @@ This returned a tuple with 2 items:
 
 Its possible to get the words of those indexes
 
-```
+```python
 model.vocab[indexes]
-```
-
-```
+```python
+```python
 array([u'hairy', u'pumpkin', u'gravy', u'nosed', u'plum', u'winged',
        u'bock', u'petals', u'biscuits', u'striped'],
       dtype='<U78')
-```
-
+```python
 There is a helper function to create a combined response: a numpy [record array](http://docs.scipy.org/doc/numpy/user/basics.rec.html)
 
-```
+```python
 model.generate_response(indexes, metrics)
-```
-
-```
+```python
+```python
 rec.array([(u'hairy', 0.8375353970603848), (u'pumpkin', 0.8359084628493809),
        (u'gravy', 0.8281874915608026), (u'nosed', 0.8253361379785071),
        (u'plum', 0.8227839904046932), (u'winged', 0.8147638561412592),
        (u'bock', 0.8139092031538545), (u'petals', 0.8125379796045767),
        (u'biscuits', 0.8105933044655644), (u'striped', 0.8085017054444408)],
       dtype=[(u'word', '<U78'), (u'metric', '<f8')])
-```
-
+```python
 Is easy to make that numpy array a pure python response:
 
-```
+```python
 model.generate_response(indexes, metrics).tolist()
-```
-
-```
+```python
+```python
 [(u'hairy', 0.8375353970603848),
  (u'pumpkin', 0.8359084628493809),
  (u'gravy', 0.8281874915608026),
@@ -404,18 +368,16 @@ model.generate_response(indexes, metrics).tolist()
  (u'petals', 0.8125379796045767),
  (u'biscuits', 0.8105933044655644),
  (u'striped', 0.8085017054444408)]
-```
-
+```python
 ### Phrases
 
 Since we trained the model with the output of `word2phrase` we can ask for similarity of "phrases"
 
-```
+```python
 indexes, metrics = model.cosine('los_angeles')
 model.generate_response(indexes, metrics).tolist()
-```
-
-```
+```python
+```python
 [(u'san_francisco', 0.886558000570455),
  (u'san_diego', 0.8731961018831669),
  (u'seattle', 0.8455603712285231),
@@ -426,28 +388,24 @@ model.generate_response(indexes, metrics).tolist()
  (u'st_louis', 0.8160655356728751),
  (u'chicago', 0.8156786240847214),
  (u'california', 0.8154244925085712)]
-```
-
+```python
 ### Analogies
 
 Its possible to do more complex queries like analogies such as: `king - man + woman = queen` This method returns the same as `cosine` the indexes of the words in the vocab and the metric
 
-```
+```python
 indexes, metrics = model.analogy(pos=['king', 'woman'], neg=['man'], n=10)
 indexes, metrics
-```
-
-```
+```python
+```python
 (array([1087, 1145, 7523, 3141, 6768, 1335, 8419, 1826,  648, 1426]),
  array([ 0.2917969,  0.27353295,  0.26877692,  0.26596514,  0.26487509,
          0.26428581,  0.26315492,  0.26261258,  0.26136635,  0.26099078]))
-```
-
-```
+```python
+```python
 model.generate_response(indexes, metrics).tolist()
-```
-
-```
+```python
+```python
 [(u'queen', 0.2917968955611075),
  (u'prince', 0.27353295205311695),
  (u'empress', 0.2687769174818083),
@@ -458,58 +416,47 @@ model.generate_response(indexes, metrics).tolist()
  (u'throne', 0.26261257728511833),
  (u'emperor', 0.2613663460665488),
  (u'bishop', 0.26099078142148696)]
-```
-
+```python
 ### Clusters
 
-```
+```python
 clusters = word2vec.load_clusters('/Users/drodriguez/Downloads/text8-clusters.txt')
-```
-
+```python
 We can see get the cluster number for individual words
 
-```
+```python
 clusters['dog']
-```
-
-```
+```python
+```python
 11
-```
-
+```python
 We can see get all the words grouped on an specific cluster
 
-```
+```python
 clusters.get_words_on_cluster(90).shape
-```
-
-```
+```python
+```python
 (221,)
-```
-
-```
+```python
+```python
 clusters.get_words_on_cluster(90)[:10]
-```
-
-```
+```python
+```python
 array(['along', 'together', 'associated', 'relationship', 'deal',
        'combined', 'contact', 'connection', 'bond', 'respect'], dtype=object)
-```
-
+```python
 We can add the clusters to the word2vec model and generate a response that includes the clusters
 
-```
+```python
 model.clusters = clusters
-```
-
-```
+```python
+```python
 indexes, metrics = model.analogy(pos=['paris', 'germany'], neg=['france'], n=10)
-```
-
-```
+```python
+```python
 model.generate_response(indexes, metrics).tolist()
-```
-
-```
+```python
+```python
 [(u'berlin', 0.32333651414395953, 20),
  (u'munich', 0.28851564633559, 20),
  (u'vienna', 0.2768927258877336, 12),
@@ -520,8 +467,6 @@ model.generate_response(indexes, metrics).tolist()
  (u'dresden', 0.2495974800117785, 71),
  (u'bonn', 0.24403155303236473, 8),
  (u'frankfurt', 0.24199720792200027, 31)]
-```
-
-```
-
-```
+```python
+```python
+```python
